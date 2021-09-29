@@ -12,7 +12,7 @@ public class PointsManager : MonoBehaviour
         return amountPoints;
     }
 
-    int amountPoin = 0;
+  
 
     void Awake()
     {

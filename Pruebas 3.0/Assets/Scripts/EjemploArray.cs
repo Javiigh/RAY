@@ -38,11 +38,14 @@ public int GetMenor()
 
 public int GetRepeated(int number)
     {
-        int repeatedTimes;
+        int repeatedTimes = arrayNumeros[0];
 
-        for(int i = 1; i < arrayNumeros.Length; i++)
+        for(int i = 1; i == arrayNumeros.Length; i++)
         {
-            if (repeatedTimes = )
+            if (repeatedTimes == arrayNumeros[i])
+            {
+                repeatedTimes = arrayNumeros[i];
+            }
         }
 
         return repeatedTimes;
@@ -51,7 +54,7 @@ public int GetRepeated(int number)
 
     void Start()
     {
-        int numeroMenor = GetMEnsor();
+        int numeroMenor = GetMenor();
         Debug.Log(numeroMenor);
 
         //Tambien se puede porner Debug:log(GetMenor());
