@@ -39,9 +39,10 @@ public int GetMenor()
 public int GetRepeated(int number)
     {
         int repeatedTimes;
-        for()
-        {
 
+        for(int i = 1; i < arrayNumeros.Length; i++)
+        {
+            if (repeatedTimes = )
         }
 
         return repeatedTimes;
