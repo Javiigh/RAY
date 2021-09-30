@@ -38,17 +38,18 @@ public int GetMenor()
 
 public int GetRepeated(int number)
     {
-        int repeatedTimes = arrayNumeros[0];
+        int repeatedTimes = 0;
 
-        for(int i = 1; i == arrayNumeros.Length; i++)
+        for(int i = 1; i < arrayNumeros.Length; i++)
         {
-            if (repeatedTimes == arrayNumeros[i])
+            if (arrayNumeros[i] == number)
             {
-                repeatedTimes = arrayNumeros[i];
+                repeatedTimes++;
             }
         }
 
         return repeatedTimes;
+
     }
 
 
@@ -56,7 +57,7 @@ public int GetRepeated(int number)
     {
         int numeroMenor = GetMenor();
         Debug.Log(numeroMenor);
-
+        Debug.Log("Se repite el 5 en " + GetRepeated(5));
         //Tambien se puede porner Debug:log(GetMenor());
             
 
