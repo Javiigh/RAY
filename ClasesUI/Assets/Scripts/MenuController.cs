@@ -7,10 +7,11 @@ public class MenuController : MonoBehaviour
     public static MenuController instance;
 
     public GameObject MenuPausa;
+    public GameObject MenuSettings;
 
     void Awake()
     {
-        if (instance != null)
+        if (instance == null)
         {
             instance = this;
         }
@@ -30,4 +31,13 @@ public class MenuController : MonoBehaviour
         MenuPausa.SetActive(false);
     }
 
+    public void EnableMenuSettings()
+    {
+        MenuSettings.SetActive(true);
+    }
+
+    public void DisableMenuSettings()
+    {
+        MenuSettings.SetActive(false);
+    }
 }

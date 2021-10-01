@@ -18,7 +18,9 @@ public class GameController : MonoBehaviour
 
         if(Input.GetKeyUp(KeyCode.Escape) == true)
         {
-
+            MenuController.instance.EnableMenuPausa();
         }
+
+       
     }
 }
