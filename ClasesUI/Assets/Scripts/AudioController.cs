@@ -37,7 +37,7 @@ public class AudioController : MonoBehaviour
     {
         Debug.Log("Valor modificado" + SliderPitch.value);
 
-        //El volumen = slider sound value
+        //El pitch = slider sound value
         musicSource.pitch = SliderPitch.value;
     }
 }
