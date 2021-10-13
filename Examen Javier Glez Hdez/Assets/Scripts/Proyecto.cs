@@ -12,10 +12,9 @@ public class Proyecto : MonoBehaviour
     public GameObject SB;
     public float Tiempo = 0.0f;
     public TextMeshProUGUI Crono;
-    public TextMeshProUGUI Resultado;
-    public TextMeshProUGUI infoGame;
+    public TextMeshProUGUI resultado;
+    public TextMeshProUGUI info;
     public bool Boton = false;
-    public float Score = 0.0f;
     private int goalsPlayer1 = 0;
     private int goalsPlayer2 = 0;
     private int playerTurn = 1;
@@ -28,12 +27,11 @@ public class Proyecto : MonoBehaviour
 
     void Update()
     {
-
+             
         // cronometro += Time.deltaTime;
-        // labelCrono.text = cronometro.ToString("0.00");
+        Crono.text = Tiempo.ToString("0.00");
 
         Debug.Log(Tiempo);
-        Debug.Log(Score + " Puntos");
 
         if (Boton == true)
         {
@@ -46,34 +44,7 @@ public class Proyecto : MonoBehaviour
             Jb.SetActive(true);
             SB.SetActive(false);
         }
-
-        Crono.text = Tiempo + " Segundos";
-
-        Score = Tiempo;
-
-        if (Score >= 1)
-        {
-            Score = 0 + Time.deltaTime;
-        }
-
-        if (Score >= 0 && Score < 0.25)
-        {
-            Resultado.text = "Gol";
-        }
-
-        else
-        {
-            if (Score >= 0.26 && Score < 0.80)
-            {
-                Resultado.text = "Pierde la pelota";
-            }
-
-            else
-            {
-                Resultado.text = "Falta";
-            }
-        }
-
+              
     }
 
     public void ClickJugarButton()
@@ -85,7 +56,6 @@ public class Proyecto : MonoBehaviour
     public void ClickJbButton()
     {
         Boton = !Boton;
-        Tiempo = 0.0f;
     }
 
     public void ClickSbButton()
@@ -94,9 +64,39 @@ public class Proyecto : MonoBehaviour
 
     }
 
-    public float GetDecimals(float Tiempo)
+    public float GetDecimals(float number)
     {
         return Tiempo % 1;
+    }
+    
+    public string GetResult(float Tiempo)
+    {
+        float decimals = GetDecimals(Tiempo);
+
+        if (Tiempo >= 0.0f & Tiempo < 0.25f)
+        {
+            resultado.text = "GOL";
+            //       MARCA GOL Y
+            //
+            //       CAMBIA DE JUGADOR
+            UpdatePlayerTurn();
+            // ACTUALIZA INFOGAME
+            info.text = "Le toca al jugador" + playerTurn;
+        }
+
+        else if (Tiempo > 0.25f & Tiempo <= 0.75f)
+        {
+            resultado.text = "Fuera";
+            //       CAMBIA DE JUGADOR
+        }
+
+        else
+        {
+            resultado.text = "Falta";
+            //       CAMBIA DE JUGADOR
+        }
+
+        return Tiempo;
     }
 
     public void UpdatePlayerTurn()

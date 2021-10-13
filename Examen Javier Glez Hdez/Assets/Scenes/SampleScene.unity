@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1961,10 +1961,9 @@ MonoBehaviour:
   SB: {fileID: 586295722}
   Tiempo: 0
   Crono: {fileID: 1284213054}
-  Resultado: {fileID: 495837369}
-  infoGame: {fileID: 725409800}
+  resultado: {fileID: 495837369}
+  info: {fileID: 0}
   Boton: 0
-  Score: 0
 --- !u!4 &1787068910
 Transform:
   m_ObjectHideFlags: 0
