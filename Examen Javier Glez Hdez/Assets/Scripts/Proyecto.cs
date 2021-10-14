@@ -14,6 +14,7 @@ public class Proyecto : MonoBehaviour
     public TextMeshProUGUI Crono;
     public TextMeshProUGUI resultado;
     public TextMeshProUGUI info;
+    public TextMeshProUGUI ScoreBoard;
     public bool Boton = false;
     private int goalsPlayer1 = 0;
     private int goalsPlayer2 = 0;
@@ -27,7 +28,6 @@ public class Proyecto : MonoBehaviour
 
     void Update()
     {
-             
         // cronometro += Time.deltaTime;
         Crono.text = Tiempo.ToString("0.00");
 
@@ -51,40 +51,44 @@ public class Proyecto : MonoBehaviour
     {
         Inicial.SetActive(false);
         Juego.SetActive(true);
+        resultado.text = "";
     }
 
     public void ClickJbButton()
     {
         Boton = !Boton;
+        GetResult(Tiempo);
     }
 
     public void ClickSbButton()
     {
         Boton = !Boton;
-
+        ScoreBoard.text = goalsPlayer1 + " - " + goalsPlayer2;
     }
 
     public float GetDecimals(float number)
     {
-        return Tiempo % 1;
+        return number % 1;
     }
     
     public string GetResult(float Tiempo)
     {
         float decimals = GetDecimals(Tiempo);
 
-        if (Tiempo >= 0.0f & Tiempo < 0.25f)
+        if (decimals >= 0.0f & decimals < 0.25f)
         {
             resultado.text = "GOL";
-            //       MARCA GOL Y
-            //
+            //      AUMENTAR GOLES
+
+            //      ACTUALIZA MARCADOR  
+            UpdateScoreBoard();
             //       CAMBIA DE JUGADOR
             UpdatePlayerTurn();
             // ACTUALIZA INFOGAME
-            info.text = "Le toca al jugador" + playerTurn;
+            info.text = "Le toca al jugador " + playerTurn;
         }
 
-        else if (Tiempo > 0.25f & Tiempo <= 0.75f)
+        else if (decimals > 0.25f & decimals <= 0.75f)
         {
             resultado.text = "Fuera";
             //       CAMBIA DE JUGADOR
@@ -96,7 +100,7 @@ public class Proyecto : MonoBehaviour
             //       CAMBIA DE JUGADOR
         }
 
-        return Tiempo;
+        return Tiempo.ToString("0.00");
     }
 
     public void UpdatePlayerTurn()
@@ -111,7 +115,7 @@ public class Proyecto : MonoBehaviour
         }
     }
 
-    private void ScoreGoal()
+    private void UpdateScoreBoard()
     {
         if (playerTurn == 1)
         {
@@ -123,38 +127,4 @@ public class Proyecto : MonoBehaviour
         }
     }
 
-    //  public float GetDecimals (float number)
-    //  {
-    //    return number % 1;
-    //  }
-
-    // public string GetResult(float time)
-    // {
-    //   string resultado = "Mostrar resultado jugada";
-    //   float decimals = GetDecimals(time);
-
-    // if (decimals >= 0.0f & decimals <0.25f)
-    // {
-    //   resultado = "GOL";
-    //       MARCA GOL Y
-    //
-    //       CAMBIA DE JUGADOR
-    // UpdatePlayerTurn();
-    // ACTUALIZA INFOGAME
-    // info.game.text = "Le toca al jugador" + playerTurn;
-    // }
-
-    // else if (decimals > 0.25f & decimals <=0.75f)
-    // {
-    //  resultado = fuera;
-    //       CAMBIA DE JUGADOR
-    // }
-
-    // else
-    // {
-    //  resultado = "Falta";
-    //       CAMBIA DE JUGADOR
-    // }
-    //   return resultado;
-    // }
 }
