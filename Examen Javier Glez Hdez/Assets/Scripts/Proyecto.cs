@@ -31,8 +31,6 @@ public class Proyecto : MonoBehaviour
         // cronometro += Time.deltaTime;
         Crono.text = Tiempo.ToString("0.00");
 
-        Debug.Log(Tiempo);
-
         if (Boton == true)
         {
             Tiempo = Tiempo + Time.deltaTime;
