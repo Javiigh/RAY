@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: Project
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -46,7 +46,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 997
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
@@ -122,7 +122,7 @@ MonoBehaviour:
   m_MinSize: {x: 781, y: 492}
   m_MaxSize: {x: 16006, y: 14042}
   vertical: 0
-  controlID: 3793
+  controlID: 162
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_MinSize: {x: 505, y: 492}
   m_MaxSize: {x: 12005, y: 14042}
   vertical: 1
-  controlID: 3794
+  controlID: 123
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -173,7 +173,7 @@ MonoBehaviour:
   m_MinSize: {x: 505, y: 221}
   m_MaxSize: {x: 12005, y: 4021}
   vertical: 0
-  controlID: 3795
+  controlID: 60
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -280,7 +280,7 @@ MonoBehaviour:
   - {fileID: 18}
   - {fileID: 19}
   m_Selected: 0
-  m_LastSelected: 2
+  m_LastSelected: 1
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -427,7 +427,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 608fffff18d5ffff1ad6ffff7cd6ffffd6d6ffff68d7fffffee9ffff00eaffff28ecffff2aecffff40edffff80eeffff80f0fffff4f0ffff28f2fffffaf3ffff00f7ffff1af7fffff2fafffff4ffffff
+      m_ExpandedIDs: faf6ffff16f7ffff18f7ffff38f7ffff88f7fffff0f7ffff0cf8ffff50f9fffff0fafffff4ffffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -597,14 +597,14 @@ MonoBehaviour:
     - {fileID: -7515732682411462893, guid: 844530346ef163d4f86888e6e8ea1940, type: 2}
     - {fileID: 7172054898266975180, guid: de777bfc5b760d14d8155915506ad0ee, type: 2}
     m_ValueSerializationHelper:
-    - e00: 0.9044066
+    - e00: 0.83757126
       e01: 0
       e02: 0
-      e03: -138.56354
+      e03: -192.64142
       e10: 0
-      e11: 0.9044066
+      e11: 0.83757126
       e12: 0
-      e13: 91.68317
+      e13: 5.455841
       e20: 0
       e21: 0
       e22: 1
@@ -613,14 +613,14 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
-    - e00: 0.6263737
+    - e00: 0.43721747
       e01: 0
       e02: 0
-      e03: -54.900787
+      e03: -9.319824
       e10: 0
-      e11: 0.6263737
+      e11: 0.43721747
       e12: 0
-      e13: 239.54134
+      e13: 207.57047
       e20: 0
       e21: 0
       e22: 1
@@ -691,14 +691,14 @@ MonoBehaviour:
   m_LastFolders:
   - Assets
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: D:\RAY\Directorio\Mars Wars
+  m_LastProjectPath: E:\clase\3D\RAY\Git\RAY\Mars Wars
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: d23e0000
-    m_LastClickedID: 16082
-    m_ExpandedIDs: 00000000d23e000000ca9a3b
+    m_SelectedIDs: 643e0000
+    m_LastClickedID: 15972
+    m_ExpandedIDs: 00000000643e000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -726,7 +726,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000d23e000000ca9a3b
+    m_ExpandedIDs: 00000000643e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -925,7 +925,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: d23e0000
     m_LastClickedID: 16082
-    m_ExpandedIDs: 00000000d23e000000ca9a3b
+    m_ExpandedIDs: 00000000643e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -953,7 +953,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000d23e000000ca9a3b
+    m_ExpandedIDs: 00000000643e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
