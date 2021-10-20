@@ -7,7 +7,10 @@ public class LevelLoader : MonoBehaviour
 {
     public Animator transition;
     public float Timer = 0f;
-
+    private void Awake()
+    {
+        DontDestroyOnLoad(this.gameObject);
+    }
     // Update is called once per frame
     void Update()
     {
