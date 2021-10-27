@@ -9,7 +9,7 @@ public class ControlMenu : MonoBehaviour
     public GameObject PantallaEspera;
     public GameObject PantallaInicial;
     public GameObject Juego;
-    public GameObject JugarB;
+    public Button JugarB;
     public GameObject OpcionesB;
     public GameObject RecordsB;
 
