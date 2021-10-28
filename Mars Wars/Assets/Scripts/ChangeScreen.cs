@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class ChangeScreen : MonoBehaviour
 {
+    public GameObject currentScreen;
+    public GameObject nextScreen;
+
     void Start()
     {
         
@@ -12,5 +15,11 @@ public class ChangeScreen : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void NextScreen()
+    {
+        currentScreen.SetActive(false);
+        nextScreen.SetActive(true);
     }
 }

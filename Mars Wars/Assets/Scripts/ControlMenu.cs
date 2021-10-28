@@ -27,7 +27,7 @@ public class ControlMenu : MonoBehaviour
         }
     }
 
-    public void ClickJugarBButton()
+    public void ClickJugarB()
     {
         PantallaInicial.SetActive(false);
         Juego.SetActive(true);
