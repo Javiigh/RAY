@@ -9,9 +9,11 @@ public class ControlMenu : MonoBehaviour
     public GameObject PantallaEspera;
     public GameObject PantallaInicial;
     public GameObject Juego;
+    public GameObject Opciones;
+    public GameObject Records;
     public Button JugarB;
-    public GameObject OpcionesB;
-    public GameObject RecordsB;
+    public Button OpcionesB;
+    public Button RecordsB;
 
     void Start()
     {
@@ -25,6 +27,15 @@ public class ControlMenu : MonoBehaviour
             PantallaEspera.SetActive(false);
             PantallaInicial.SetActive(true);
         }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            PantallaEspera.SetActive(false);
+            Juego.SetActive(false);
+            Opciones.SetActive(false);
+            Records.SetActive(false);
+            PantallaInicial.SetActive(true);
+        }
     }
 
     public void ClickJugarB()
@@ -33,4 +44,15 @@ public class ControlMenu : MonoBehaviour
         Juego.SetActive(true);
     }
 
+    public void ClickOpcionesB()
+    {
+        PantallaInicial.SetActive(false);
+        Opciones.SetActive(true);
+    }
+
+    public void ClickRecordsB()
+    {
+        PantallaInicial.SetActive(false);
+        Records.SetActive(true);
+    }
 }
