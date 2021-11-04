@@ -22,7 +22,7 @@ public class ControlMenu : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Return))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             PantallaEspera.SetActive(false);
             PantallaInicial.SetActive(true);
