@@ -289,7 +289,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 26436304}
-  m_Text: "A\xF1o 2025, Tierra\r\n"
+  m_Text: "A\xF1o 2025, Tierra\n"
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -1811,6 +1811,10 @@ PrefabInstance:
     - target: {fileID: 7142377382823833142, guid: 96c905dfac1b1c94ea6251f52be645eb, type: 3}
       propertyPath: m_Name
       value: LevelLoader
+      objectReference: {fileID: 0}
+    - target: {fileID: 7142377382823833142, guid: 96c905dfac1b1c94ea6251f52be645eb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96c905dfac1b1c94ea6251f52be645eb, type: 3}
