@@ -25,6 +25,10 @@ MonoBehaviour:
     m_Address: Assets/Idiomas/Escena1 Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
+  - m_GUID: bb3a374454702c24ca84c0b5e8d1b5b6
+    m_Address: Assets/Idiomas/Tables/UI Text Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 1c3e4bdab2cf5ea49b3e5a415094e283, type: 2}
   m_SchemaSet:
