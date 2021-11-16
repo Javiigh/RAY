@@ -10,7 +10,7 @@ public class AudioController : MonoBehaviour
     public AudioSource efectsSource;
     public Slider SliderEffects;
 
-    // Start is called before the first frame update
+   
     void Start()
     {
         musicSource.volume = SliderSound.value;

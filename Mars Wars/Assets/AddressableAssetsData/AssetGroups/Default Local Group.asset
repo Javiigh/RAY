@@ -16,7 +16,11 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: b06914b318d73e84a9f2fa0dba871b7a
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: 6ce4d8bed493c86418c77e8f9642b1c6
+    m_Address: "Assets/Music sources/Musica espacial sin copyright (Outer space)\U0001F3B5\U0001F3B9.mp3"
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 1c3e4bdab2cf5ea49b3e5a415094e283, type: 2}
   m_SchemaSet:
