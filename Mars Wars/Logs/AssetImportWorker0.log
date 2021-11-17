@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2020.3/release' branch; Version is '2020.3.12f1 (b3b2c6512326) revision 11776710'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home; OS build 19042.1348; Version 2009; 64bit' Language: 'es' Physical Memory: 16333 MB
+OS: 'Windows 10 Pro; OS build 19042.1348; Version 2009; 64bit' Language: 'es' Physical Memory: 16321 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
@@ -11,61 +11,90 @@ C:\Program Files\Unity\Hub\Editor\2020.3.12f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-E:/clase/3D/RAY/Git/RAY/Mars Wars
+D:/RAY/Directorio/Mars Wars
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-63437
-Successfully changed project path to: E:/clase/3D/RAY/Git/RAY/Mars Wars
-E:/clase/3D/RAY/Git/RAY/Mars Wars
+60358
+Successfully changed project path to: D:/RAY/Directorio/Mars Wars
+D:/RAY/Directorio/Mars Wars
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 40.20 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 50.54 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.12f1 (b3b2c6512326)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path E:/clase/3D/RAY/Git/RAY/Mars Wars/Assets
+[Subsystems] Discovering subsystems at path D:/RAY/Directorio/Mars Wars/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
-    Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 2060 (ID=0x1f08)
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GT 730 (ID=0x1287)
     Vendor:   
-    VRAM:     5980 MB
+    VRAM:     4052 MB
     Driver:   27.21.14.6677
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56096
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56752
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002454 seconds.
+Registered in 0.003633 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 43.51 ms, found 2 plugins.
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 45.18 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.224 seconds
+- Completed reload, in  2.312 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003489 seconds.
+Registered in 0.003293 seconds.
 Begin MonoManager ReloadAssembly
+Symbol file data-0000019765CFC020 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001976ADE2010 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000197655BD490 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001976ADF5620 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000019769D12010 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000019765187420 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000019769D12010 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000019769E99220 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001976A3CCA20 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000197658159A0 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001976A435020 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000019769B90010 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000019769B90010 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.48 ms, found 2 plugins.
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.201 seconds
+- Completed reload, in  1.042 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
 Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2326 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 95.5 MB.
-System memory in use after: 95.7 MB.
+Unloading 1405 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 69.2 MB.
+System memory in use after: 69.2 MB.
 
-Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 2751.
-Total: 2.373000 ms (FindLiveObjects: 0.269600 ms CreateObjectMapping: 0.057200 ms MarkObjects: 1.943000 ms  DeleteObjects: 0.101500 ms)
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 1840.
+Total: 2.099300 ms (FindLiveObjects: 0.129300 ms CreateObjectMapping: 0.039600 ms MarkObjects: 1.815600 ms  DeleteObjects: 0.114000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -79,30 +108,105 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
+  path: Assets/Localization Settings.asset
+  artifactKey: Guid(7e045b238b8c64f489e0fcc6f2095794) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Localization Settings.asset using Guid(7e045b238b8c64f489e0fcc6f2095794) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e020e1256ac200170d959cc905f501d8') in 0.037157 seconds 
+  Import took 0.039818 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000285 seconds.
+  path: Assets/LevelLoader.prefab
+  artifactKey: Guid(96c905dfac1b1c94ea6251f52be645eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LevelLoader.prefab using Guid(96c905dfac1b1c94ea6251f52be645eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc43042b5b360d1a162ea556f4d0f0a3') in 0.064339 seconds 
+  Import took 0.067450 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.402821 seconds.
   path: Assets/Scripts/AudioController.cs
   artifactKey: Guid(83be742f81da16348bff6b1da8e9bc8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/AudioController.cs using Guid(83be742f81da16348bff6b1da8e9bc8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18a0eeebef304bd069bd6b0eae3ad2f9') in 0.061793 seconds 
-  Import took 0.065114 seconds .
+Start importing Assets/Scripts/AudioController.cs using Guid(83be742f81da16348bff6b1da8e9bc8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4b86aaf751f2b275386b309b0d8e56b') in 0.016886 seconds 
+  Import took 0.019513 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.024295 seconds.
+  path: Assets/Scripts/AudioController.cs
+  artifactKey: Guid(83be742f81da16348bff6b1da8e9bc8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/AudioController.cs using Guid(83be742f81da16348bff6b1da8e9bc8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4b86aaf751f2b275386b309b0d8e56b') in 0.001661 seconds 
+  Import took 0.005141 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 346.781998 seconds.
+  path: Assets/Scripts
+  artifactKey: Guid(6bd933df1f46ac244a01ebf52eb913f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts using Guid(6bd933df1f46ac244a01ebf52eb913f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbe946c253398f320750b9f0c2ff7a17') in 0.026564 seconds 
+  Import took 0.032127 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000567 seconds.
+  path: Assets/Scripts
+  artifactKey: Guid(6bd933df1f46ac244a01ebf52eb913f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts using Guid(6bd933df1f46ac244a01ebf52eb913f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbe946c253398f320750b9f0c2ff7a17') in 0.003249 seconds 
+  Import took 0.006611 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.583601 seconds.
+  path: Assets/Scripts/Config.cs
+  artifactKey: Guid(afafdb154ca36204198c49546cdb3dd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Config.cs using Guid(afafdb154ca36204198c49546cdb3dd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff4244932592a17e65c4ec90a447ae98') in 0.012819 seconds 
+  Import took 0.016131 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.003336 seconds.
+Registered in 0.003389 seconds.
 Begin MonoManager ReloadAssembly
+Symbol file data-0000019765BA5C60 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000019769CAE020 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001976E3E0090 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001976E3760A0 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000197655CAFC0 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001976AE30BD0 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000019769D12010 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001976AEA2010 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001976E2FB6C0 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001976E3E0090 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001976B368010 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001976B479020 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001976A006010 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.48 ms, found 2 plugins.
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.061 seconds
+- Completed reload, in  1.251 seconds
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.47 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2267 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 93.4 MB.
-System memory in use after: 93.6 MB.
+Unloading 1388 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 67.9 MB.
+System memory in use after: 67.9 MB.
 
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2754.
-Total: 2.317000 ms (FindLiveObjects: 0.244100 ms CreateObjectMapping: 0.057700 ms MarkObjects: 1.934700 ms  DeleteObjects: 0.079400 ms)
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1844.
+Total: 1.772200 ms (FindLiveObjects: 0.132800 ms CreateObjectMapping: 0.046800 ms MarkObjects: 1.544700 ms  DeleteObjects: 0.047200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -116,10 +220,473 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 14.726325 seconds.
-  path: Assets/Scripts/AudioController.cs
-  artifactKey: Guid(83be742f81da16348bff6b1da8e9bc8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/AudioController.cs using Guid(83be742f81da16348bff6b1da8e9bc8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57533ca9ffcc377395ddc73f1e6dfe30') in 0.004838 seconds 
-  Import took 0.008072 seconds .
+  Time since last request: 420.327707 seconds.
+  path: Assets/Scripts/Config.cs
+  artifactKey: Guid(afafdb154ca36204198c49546cdb3dd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Config.cs using Guid(afafdb154ca36204198c49546cdb3dd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0dff8a66256763bbcd3c94856aff2866') in 0.018811 seconds 
+  Import took 0.021722 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 0.023951 seconds.
+  path: Assets/Scripts/Config.cs
+  artifactKey: Guid(afafdb154ca36204198c49546cdb3dd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Config.cs using Guid(afafdb154ca36204198c49546cdb3dd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0dff8a66256763bbcd3c94856aff2866') in 0.008078 seconds 
+  Import took 0.012015 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003239 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0000019765238570 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000019769CAE020 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001976E956020 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001976A92E010 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000197656F8FE0 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000019769CAE020 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000019769B90010 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001976AE30BD0 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001976E2FB6C0 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000019769BB6220 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001976E37A0B0 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001976E4AC010 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001976B9E9010 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.984 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1388 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 67.9 MB.
+System memory in use after: 68.0 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1847.
+Total: 2.023900 ms (FindLiveObjects: 0.127700 ms CreateObjectMapping: 0.042700 ms MarkObjects: 1.768200 ms  DeleteObjects: 0.084500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003667 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-00000197658159A0 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001976D4176B0 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000019765C5F030 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001976A6EA030 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001976D0BA030 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001976D4176B0 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000019769B90010 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001976A6EA030 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001976A80C020 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000019769BB6220 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001976A435020 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001976B479020 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001976BBA0010 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.995 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1388 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 67.9 MB.
+System memory in use after: 68.0 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1850.
+Total: 1.878100 ms (FindLiveObjects: 0.126300 ms CreateObjectMapping: 0.044100 ms MarkObjects: 1.625500 ms  DeleteObjects: 0.081300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 343.606952 seconds.
+  path: Assets/Scripts/AudioSourceVolumeSet.cs
+  artifactKey: Guid(38c08c5d2a3193d42b7aee24ea449b06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/AudioSourceVolumeSet.cs using Guid(38c08c5d2a3193d42b7aee24ea449b06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcf97f5bd0930619169767a6fd291e82') in 0.020767 seconds 
+  Import took 0.026073 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003514 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001976D7820E0 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000019769FD2010 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000019765C5F030 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001976AE30BD0 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001976BB0A980 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000019769FD2010 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001976B919010 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001976AE30BD0 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001976D926E80 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000019765C5F030 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001976D940020 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001976B479020 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000019769B90010 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.307 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1389 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 67.9 MB.
+System memory in use after: 68.0 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1854.
+Total: 2.003900 ms (FindLiveObjects: 0.127600 ms CreateObjectMapping: 0.043700 ms MarkObjects: 1.749400 ms  DeleteObjects: 0.082400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 513.616443 seconds.
+  path: Assets/Scripts/AudioSourceVolumeSet.cs
+  artifactKey: Guid(38c08c5d2a3193d42b7aee24ea449b06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/AudioSourceVolumeSet.cs using Guid(38c08c5d2a3193d42b7aee24ea449b06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4892d5454731db99c51a7c55a3491e16') in 0.020832 seconds 
+  Import took 0.027489 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 99.890105 seconds.
+  path: Assets/Scripts/AudioSourceVolumeSet.cs
+  artifactKey: Guid(38c08c5d2a3193d42b7aee24ea449b06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/AudioSourceVolumeSet.cs using Guid(38c08c5d2a3193d42b7aee24ea449b06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '616082b7d8c13b2a466a3228f69a340d') in 0.006756 seconds 
+  Import took 0.009987 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.990995 seconds.
+  path: Assets/Scripts/AudioSourceVolumeSet.cs
+  artifactKey: Guid(38c08c5d2a3193d42b7aee24ea449b06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/AudioSourceVolumeSet.cs using Guid(38c08c5d2a3193d42b7aee24ea449b06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8664c1a12cff9ddaa6124d21878cbb4e') in 0.008103 seconds 
+  Import took 0.011067 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.212596 seconds.
+  path: Assets/Scripts/ChangeScreen.cs
+  artifactKey: Guid(102f3643d5f961a4c98f1343d3046c17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ChangeScreen.cs using Guid(102f3643d5f961a4c98f1343d3046c17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02a5d61db7fc17232f8e229b6d615d3e') in 0.012965 seconds 
+  Import took 0.016880 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003423 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001976ED97840 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001976D926E80 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000019769FDBE40 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001976D7782B0 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001976EE02A50 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001976D926E80 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001976B919010 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001976D7782B0 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001976D68C6E0 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000019769FDBE40 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000019765739F00 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001976B479020 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001976BA93050 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.007 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.48 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1389 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 67.9 MB.
+System memory in use after: 68.0 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1857.
+Total: 1.969000 ms (FindLiveObjects: 0.127800 ms CreateObjectMapping: 0.041700 ms MarkObjects: 1.712400 ms  DeleteObjects: 0.086300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 90.159194 seconds.
+  path: Assets/Scripts/ControlMenu.cs
+  artifactKey: Guid(42630f84aa47cdb498607da237672a18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ControlMenu.cs using Guid(42630f84aa47cdb498607da237672a18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bd060f7dd1bbc778d367549edbbc6d7') in 0.010419 seconds 
+  Import took 0.013924 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003286 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001976E588040 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000197655DC010 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001976EDFC0C0 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001976AE30BD0 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000019769A20080 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000019769FD2010 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001976CD98050 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001976AE30BD0 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001976D68C6E0 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001976D265E80 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001976EE3EBD0 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001976B479020 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001976564F020 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.48 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.213 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.51 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1389 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 67.9 MB.
+System memory in use after: 68.0 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1860.
+Total: 2.110800 ms (FindLiveObjects: 0.149300 ms CreateObjectMapping: 0.046900 ms MarkObjects: 1.858900 ms  DeleteObjects: 0.054500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003505 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001976E588040 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000197655DC010 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001977281F030 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001976D0BA030 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000019769A20080 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001976D25C050 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001976CD98050 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001976D0BA030 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001976D68C6E0 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000019769FDA020 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001976B31D030 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001976B479020 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001976564F020 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.018 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.47 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1389 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 67.9 MB.
+System memory in use after: 68.0 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1863.
+Total: 2.429200 ms (FindLiveObjects: 0.136100 ms CreateObjectMapping: 0.040600 ms MarkObjects: 2.197200 ms  DeleteObjects: 0.054100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 68.841781 seconds.
+  path: Assets/Scripts/ControlMenu.cs
+  artifactKey: Guid(42630f84aa47cdb498607da237672a18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ControlMenu.cs using Guid(42630f84aa47cdb498607da237672a18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d5f146bfbea6c1408a34263dbc61772') in 0.006617 seconds 
+  Import took 0.009487 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003262 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000001976BA45790 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000019772581010 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000019765812020 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000197654E7E00 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000019769A20080 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000019769FD2010 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001976CD98050 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000197654E7E00 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000197724A9030 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001976D264060 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001976E37A0B0 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001976EEA9040 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000001976564F020 doesn't match image D:\RAY\Directorio\Mars Wars\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.044 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.47 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1389 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 68.0 MB.
+System memory in use after: 68.0 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1866.
+Total: 2.104200 ms (FindLiveObjects: 0.147300 ms CreateObjectMapping: 0.048000 ms MarkObjects: 1.847100 ms  DeleteObjects: 0.060700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

@@ -17,7 +17,7 @@ public class ControlMenu : MonoBehaviour
 
     void Start()
     {
-        
+
     }
 
     void Update()
@@ -54,5 +54,11 @@ public class ControlMenu : MonoBehaviour
     {
         PantallaInicial.SetActive(false);
         Records.SetActive(true);
+    }
+
+    public void VolverPantallaInicial()
+    {
+        PantallaInicial.SetActive(true);
+        Opciones.SetActive(false);
     }
 }
