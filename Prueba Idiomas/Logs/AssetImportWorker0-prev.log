@@ -1,0 +1,193 @@
+Using pre-set license
+Built from '2020.3/release' branch; Version is '2020.3.12f1 (b3b2c6512326) revision 11776710'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19042.1348; Version 2009; 64bit' Language: 'es' Physical Memory: 16321 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.12f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/RAY/Directorio/Prueba Idiomas
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+56713
+Successfully changed project path to: D:/RAY/Directorio/Prueba Idiomas
+D:/RAY/Directorio/Prueba Idiomas
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 41.82 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.12f1 (b3b2c6512326)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/RAY/Directorio/Prueba Idiomas/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GT 730 (ID=0x1287)
+    Vendor:   
+    VRAM:     4052 MB
+    Driver:   27.21.14.6677
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56764
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002465 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 46.62 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.307 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.003338 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.188 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.44 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2304 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 94.8 MB.
+System memory in use after: 95.0 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2735.
+Total: 34.692300 ms (FindLiveObjects: 0.238900 ms CreateObjectMapping: 0.127200 ms MarkObjects: 34.224200 ms  DeleteObjects: 0.100300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Idiomas/UIText/Spanish (es).asset
+  artifactKey: Guid(5a7650f7e394c9947971aa8492b5ccea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Idiomas/UIText/Spanish (es).asset using Guid(5a7650f7e394c9947971aa8492b5ccea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e3ceef973d9324bd0aa8a6a6252f54a') in 0.043105 seconds 
+  Import took 0.046846 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/Idiomas/UIText/UIText_en.asset
+  artifactKey: Guid(8778af91d3eabf74c8b54451f0bce958) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Idiomas/UIText/UIText_en.asset using Guid(8778af91d3eabf74c8b54451f0bce958) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '196e41aa019f74ef5649c508729460f5') in 0.015317 seconds 
+  Import took 0.018922 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/Idiomas/UIText/UIText Shared Data.asset
+  artifactKey: Guid(0ed75a8feb6ff7a48ab666262e813e0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Idiomas/UIText/UIText Shared Data.asset using Guid(0ed75a8feb6ff7a48ab666262e813e0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c749248b7e9e049eb41f0a9c9d9c59ea') in 0.009762 seconds 
+  Import took 0.013451 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000161 seconds.
+  path: Assets/Idiomas/UIText/English (en).asset
+  artifactKey: Guid(706fea29139676f469bcc32d29cf64c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Idiomas/UIText/English (en).asset using Guid(706fea29139676f469bcc32d29cf64c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2209fefdf708ccf658f8fa0e6cc562ef') in 0.010331 seconds 
+  Import took 0.013909 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Idiomas/UIText/UIText.asset
+  artifactKey: Guid(a12fa2d80ad617646b466b609344f483) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Idiomas/UIText/UIText.asset using Guid(a12fa2d80ad617646b466b609344f483) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17ac473e3f8a74f24e21fc6512324c02') in 0.010307 seconds 
+  Import took 0.014708 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000175 seconds.
+  path: Assets/Idiomas/UIText/UIText_es.asset
+  artifactKey: Guid(f41cd2886ea7b8d42bffdedf8121068d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Idiomas/UIText/UIText_es.asset using Guid(f41cd2886ea7b8d42bffdedf8121068d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67288ad87c60506cfe3fe160f9c10f0e') in 0.006698 seconds 
+  Import took 0.010192 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.009463 seconds.
+  path: Assets/Idiomas/UIText/UIText.asset
+  artifactKey: Guid(a12fa2d80ad617646b466b609344f483) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Idiomas/UIText/UIText.asset using Guid(a12fa2d80ad617646b466b609344f483) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17ac473e3f8a74f24e21fc6512324c02') in 0.008460 seconds 
+  Import took 0.013441 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 37.527141 seconds.
+  path: Assets/Idiomas/UIText/UIText Shared Data.asset
+  artifactKey: Guid(0ed75a8feb6ff7a48ab666262e813e0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Idiomas/UIText/UIText Shared Data.asset using Guid(0ed75a8feb6ff7a48ab666262e813e0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6aabb5b5740efbe17521be74b5d831f3') in 0.006613 seconds 
+  Import took 0.010690 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/Idiomas/UIText/UIText_en.asset
+  artifactKey: Guid(8778af91d3eabf74c8b54451f0bce958) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Idiomas/UIText/UIText_en.asset using Guid(8778af91d3eabf74c8b54451f0bce958) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3510c8aa2a67e1f5b1dde3ce4af84d8c') in 0.008128 seconds 
+  Import took 0.011730 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000175 seconds.
+  path: Assets/Idiomas/UIText/UIText_es.asset
+  artifactKey: Guid(f41cd2886ea7b8d42bffdedf8121068d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Idiomas/UIText/UIText_es.asset using Guid(f41cd2886ea7b8d42bffdedf8121068d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e87bb68e3e29c7db26ae08fee0b33ab') in 0.006697 seconds 
+  Import took 0.011426 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005252 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.70 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.261 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.43 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2261 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 93.0 MB.
+System memory in use after: 93.2 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2738.
+Total: 2.376600 ms (FindLiveObjects: 0.217500 ms CreateObjectMapping: 0.106200 ms MarkObjects: 1.961500 ms  DeleteObjects: 0.090300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

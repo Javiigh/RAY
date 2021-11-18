@@ -16,7 +16,51 @@ MonoBehaviour:
   m_TableCollectionNameGuidString: 6753ed39b960bf84ab465f6d2b4b45aa
   m_Entries:
   - m_Id: 652226678784
-    m_Key: New Entry
+    m_Key: _Texto1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2437444165070848
+    m_Key: _Texto1I
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2437603846418432
+    m_Key: _Texto2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2437723199533056
+    m_Key: _Texto2I
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2437848797966336
+    m_Key: _Texto3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2437957883424768
+    m_Key: _Texto3I
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2438051600953344
+    m_Key: _Texto4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2438131456307200
+    m_Key: _Texto4I
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2438289464127488
+    m_Key: _Texto5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2438356778512384
+    m_Key: _Texto5I
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2438434956144640
+    m_Key: _Texto6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2438498776674304
+    m_Key: _Texto6I
     m_Metadata:
       m_Items: []
   m_Metadata:
