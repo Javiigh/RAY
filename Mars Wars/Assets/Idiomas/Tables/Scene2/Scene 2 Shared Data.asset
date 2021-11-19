@@ -31,6 +31,34 @@ MonoBehaviour:
     m_Key: _Guardar
     m_Metadata:
       m_Items: []
+  - m_Id: 290702892101632
+    m_Key: _Musica
+    m_Metadata:
+      m_Items: []
+  - m_Id: 290778020474880
+    m_Key: _efectos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 291187044806656
+    m_Key: "_Espa\xF1ol"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 291233890988032
+    m_Key: _ingles
+    m_Metadata:
+      m_Items: []
+  - m_Id: 291609297973248
+    m_Key: _Presiona
+    m_Metadata:
+      m_Items: []
+  - m_Id: 291841528197120
+    m_Key: _Jugar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 291893197828096
+    m_Key: _Opcione
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

@@ -15,14 +15,9 @@ public class ControlMenu : MonoBehaviour
     public Button OpcionesB;
     public Button RecordsB;
 
-    void Start()
+     void Update()
     {
-
-    }
-
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) || Input.touchCount > 0)
         {
             PantallaEspera.SetActive(false);
             PantallaInicial.SetActive(true);

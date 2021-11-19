@@ -34,5 +34,33 @@ MonoBehaviour:
     m_Localized: Save
     m_Metadata:
       m_Items: []
+  - m_Id: 290702892101632
+    m_Localized: music
+    m_Metadata:
+      m_Items: []
+  - m_Id: 290778020474880
+    m_Localized: Sound effects
+    m_Metadata:
+      m_Items: []
+  - m_Id: 291187044806656
+    m_Localized: Spanish
+    m_Metadata:
+      m_Items: []
+  - m_Id: 291233890988032
+    m_Localized: English
+    m_Metadata:
+      m_Items: []
+  - m_Id: 291609297973248
+    m_Localized: Press space
+    m_Metadata:
+      m_Items: []
+  - m_Id: 291841528197120
+    m_Localized: Play
+    m_Metadata:
+      m_Items: []
+  - m_Id: 291893197828096
+    m_Localized: Options
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

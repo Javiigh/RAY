@@ -7,11 +7,27 @@ public class LevelLoader : MonoBehaviour
 {
     public Animator transition;
     public float Timer = 0f;
+    bool touchEnded = false;
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
+        if(Input.touchCount >0)
+        {
+            Touch touch = Input.GetTouch(0);
+            if(touch.phase == TouchPhase.Ended)
+            {
+                
+                touchEnded = true;
+            }
+        }
+
+        else
+        {
+            touchEnded = false;
+        }
+
+        if(Input.GetKeyDown(KeyCode.Space) || Input.touchCount > 0)
         {
             LoadNextLevel();
         }
