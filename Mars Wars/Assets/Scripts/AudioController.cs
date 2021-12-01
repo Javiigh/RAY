@@ -21,8 +21,8 @@ public class AudioController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("Valor modificado" + SliderSound.value);
-        Debug.Log("Valor modificado" + SliderEffects.value);
+    //    Debug.Log("Valor modificado" + SliderSound.value);
+   //     Debug.Log("Valor modificado" + SliderEffects.value);
     }
 
     public void SliderSoundMofied()

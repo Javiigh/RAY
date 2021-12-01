@@ -10,36 +10,37 @@ public class ChangeLenguage : MonoBehaviour
     public Button EnglishB;
     public Button EspañolB;
 
-    void Update()
+    IEnumerator Start()
     {
-        if(Input.GetKeyUp(KeyCode.RightArrow))
-        {
-            index++;
-            if(index > 2)
-            {
-                index = 0;
-            }
-            LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[index];
-        }
+        yield return LocalizationSettings.InitializationOperation;
 
-        if (Input.GetKeyUp(KeyCode.LeftArrow))
-        {
-            index++;
-            if (index < 0)
-            {
-                index = 2;
-            }
-            LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[index];
-        }
+        RestoreLang();
     }
 
     public void ClickEnglishB()
     {
         LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[0];
+        index = 0;
     }
 
     public void ClickEspañolB()
     {
         LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[1];
+        index = 1;
+    }
+
+    public void SaveLang()
+    {
+
+        PlayerPrefs.SetInt("langIndex", index);
+        PlayerPrefs.Save();
+
+    }
+
+    public void RestoreLang()
+    {
+        index = PlayerPrefs.GetInt("langIndex", 0);
+        LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[index];
+
     }
 }
