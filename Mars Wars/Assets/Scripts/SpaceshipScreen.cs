@@ -11,8 +11,9 @@ public class SpaceshipScreen : MonoBehaviour
     public Slider speedSlider;
     public Slider shieldSlider;
     public Slider heatSlider;
-    public TextMeshProUGUI Nombre;
+    public TextMeshProUGUI ShipName;
     private float speed = 1f;
+    public Transform iconShield;
 
     void Start()
     {
@@ -33,6 +34,8 @@ public class SpaceshipScreen : MonoBehaviour
         heatSlider.value = infoSpaceShip.heat;
         Nombre = spaceshipName;
         */
+
+        //ShipName = infoSpaceShip.spaceshipName;
 
         if (shieldSlider.value < infoSpaceShip.shield)
         {
@@ -61,10 +64,18 @@ public class SpaceshipScreen : MonoBehaviour
     for(int iconoModificado =0 < iconParents.childCount; iconoModificado++)
     {
 
-    if (myShip.speed > iconoModificado).gameObject.SetActive(true);
+        if (myShip.speed > iconoModificado).gameObject.SetActive(true);
+        {
+            iconParents.GetChild(iconoModificado).gameObject.SetActive(true);
+        }
+        else
+        {
+            inconParents.GetChild(iconoModificado).gameObject.SetActive(false);
+        }
 
 
     }
 
+     ****Una para Shiel, heat y speed.
    */
 }
