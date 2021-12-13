@@ -11,6 +11,7 @@ public class SpaceshipScreen : MonoBehaviour
     public Slider speedSlider;
     public Slider shieldSlider;
     public Slider heatSlider;
+    public Image Vel;
     public TextMeshProUGUI ShipName;
     private float speed = 1f;
     public Transform iconShield;
@@ -20,6 +21,8 @@ public class SpaceshipScreen : MonoBehaviour
         speedSlider.value = 0;
         shieldSlider.value = 0;
         heatSlider.value = 0;
+
+        Vel.fillAmount = 0;
     }
 
     void Update()
@@ -50,6 +53,12 @@ public class SpaceshipScreen : MonoBehaviour
         if (heatSlider.value < infoSpaceShip.heat)
         {
             heatSlider.value += Time.deltaTime * speed;
+        }
+
+        if (Vel.fillAmount < (infoSpaceShip.shield * 0.636 / 3))
+        {
+            Debug.Log("Speed" + Vel.fillAmount);
+            Vel.fillAmount += Time.deltaTime * speed;
         }
     }
 

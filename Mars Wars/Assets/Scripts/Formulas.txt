@@ -1,0 +1,25 @@
+
+
+Valor imagen	 Representacion
+    1               0.636
+   0.5                x
+
+0.5*0.636 = 1x
+
+x = 0.5*0.636/1
+
+fillAmountTotal = velocidadNave*0.636
+
+        if (speedSlider.value < infoSpaceShip.speed*0.636/100)
+        {
+
+		 speedSlider.value += Time.deltaTime * speed;
+        }
+
+
+shield        imagen
+   3           0.636
+   2             x
+
+2*0.636=3x
+x= 2*0.636/3
