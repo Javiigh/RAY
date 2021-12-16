@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Nave 3
   m_EditorClassIdentifier: 
   spaceshipName: Nave 3
-  shield: 0
-  speed: 0
-  heat: 0
+  shield: 1
+  speed: 3
+  heat: 2

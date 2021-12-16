@@ -14,13 +14,16 @@ public class ControlMenu : MonoBehaviour
     public Button JugarB;
     public Button OpcionesB;
     public Button RecordsB;
+    public AudioSource efectsSource;
+    public AudioSource ButtonSound;
 
-     void Update()
+    void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space) || Input.touchCount > 0)
         {
             PantallaEspera.SetActive(false);
             PantallaInicial.SetActive(true);
+            efectsSource.Play(0);
         }
 
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -30,6 +33,7 @@ public class ControlMenu : MonoBehaviour
             Opciones.SetActive(false);
             Records.SetActive(false);
             PantallaInicial.SetActive(true);
+            efectsSource.Play(0);
         }
     }
 
@@ -37,23 +41,32 @@ public class ControlMenu : MonoBehaviour
     {
         PantallaInicial.SetActive(false);
         Juego.SetActive(true);
+        efectsSource.Play(0);
+        ButtonSound.Play(0);
     }
 
     public void ClickOpcionesB()
     {
+        PantallaEspera.SetActive(false);
         PantallaInicial.SetActive(false);
         Opciones.SetActive(true);
+        efectsSource.Play(0);
+        ButtonSound.Play(0);
     }
 
     public void ClickRecordsB()
     {
         PantallaInicial.SetActive(false);
         Records.SetActive(true);
+        efectsSource.Play(0);
+        ButtonSound.Play(0);
     }
 
     public void VolverPantallaInicial()
     {
         PantallaInicial.SetActive(true);
         Opciones.SetActive(false);
+        efectsSource.Play(0);
+        ButtonSound.Play(0);
     }
 }

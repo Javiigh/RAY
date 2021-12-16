@@ -9,6 +9,7 @@ public class ChangeLenguage : MonoBehaviour
     int index = 0;
     public Button EnglishB;
     public Button EspañolB;
+    public AudioSource ButtonSound;
 
     IEnumerator Start()
     {
@@ -21,12 +22,14 @@ public class ChangeLenguage : MonoBehaviour
     {
         LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[0];
         index = 0;
+        ButtonSound.Play(0);
     }
 
     public void ClickEspañolB()
     {
         LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[1];
         index = 1;
+        ButtonSound.Play(0);
     }
 
     public void SaveLang()

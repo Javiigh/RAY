@@ -6,6 +6,7 @@ public class ChangeScreen : MonoBehaviour
 {
     public GameObject currentScreen;
     public GameObject nextScreen;
+    public AudioSource efectsSource;
 
     void Start()
     {
@@ -21,5 +22,6 @@ public class ChangeScreen : MonoBehaviour
     {
         currentScreen.SetActive(false);
         nextScreen.SetActive(true);
+        efectsSource.Play(0);
     }
 }

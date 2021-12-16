@@ -12,6 +12,10 @@ public class MenuShips : MonoBehaviour
     public GameObject NoJuega;
     public GameObject EleccionNave;
     public GameObject EleccionJuego;
+    public AudioSource efectsSource; 
+    public AudioSource ShipMusic;
+    public AudioSource Music;
+    public AudioSource ButtonSound;
 
     void Start()
     {
@@ -28,6 +32,7 @@ public class MenuShips : MonoBehaviour
         SiJuega.SetActive(true);
         NoJuega.SetActive(false);
         Jugar.enabled = true;
+        ButtonSound.Play(0);
     }
 
     public void ClickJugadores()
@@ -35,11 +40,16 @@ public class MenuShips : MonoBehaviour
         SiJuega.SetActive(true);
         NoJuega.SetActive(false);
         Jugar.enabled = true;
+        ButtonSound.Play(0);
     }
 
     public void ClickJugar()
     {
         EleccionNave.SetActive(true);
         EleccionJuego.SetActive(false);
+        efectsSource.Play(0);
+        ShipMusic.Play(0);
+        Music.Pause();
+        ButtonSound.Play(0);
     }
 }

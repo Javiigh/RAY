@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spaceshipName: Starship
   shield: 2
-  speed: 1
+  speed: 2.5
   heat: 3
