@@ -11,9 +11,11 @@ public class SpaceshipScreen : MonoBehaviour
     public Slider speedSlider;
     public Slider shieldSlider;
     public Slider heatSlider;
-    public Image Vel;
+    public Image VerdeVel;
+    public Image ColVida;
+    public Image Potencia;
     public TextMeshProUGUI ShipName;
-    private float speed = 1f;
+    private float speed = 0.3f;
     public Transform iconShield;
 
     void Start()
@@ -22,7 +24,10 @@ public class SpaceshipScreen : MonoBehaviour
         shieldSlider.value = 0;
         heatSlider.value = 0;
 
-        Vel.fillAmount = 0;
+        VerdeVel.fillAmount = 0;
+        ColVida.fillAmount = 0;
+        Potencia.fillAmount = 0;
+
     }
 
     void Update()
@@ -55,10 +60,22 @@ public class SpaceshipScreen : MonoBehaviour
             heatSlider.value += Time.deltaTime * speed;
         }
 
-        if (Vel.fillAmount < (infoSpaceShip.shield * 0.636 / 3))
+        if (VerdeVel.fillAmount < (infoSpaceShip.speed * 0.636 / 3))
         {
-            Debug.Log("Speed" + Vel.fillAmount);
-            Vel.fillAmount += Time.deltaTime * speed;
+            Debug.Log("Speed" + VerdeVel.fillAmount);
+            VerdeVel.fillAmount += Time.deltaTime * speed;
+        }
+
+        if (ColVida.fillAmount < (infoSpaceShip.shield * 1 / 3))
+        {
+            Debug.Log("Speed" + ColVida.fillAmount);
+            ColVida.fillAmount += Time.deltaTime * speed;
+        }
+
+        if (Potencia.fillAmount < (infoSpaceShip.heat * 1 / 3))
+        {
+            Debug.Log("Speed" + Potencia.fillAmount);
+            Potencia.fillAmount += Time.deltaTime * speed;
         }
     }
 
