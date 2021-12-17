@@ -6,18 +6,16 @@ using TMPro;
 
 public class SpaceshipScreen : MonoBehaviour
 {
-    public int[] ArrayShips;
-    public SpaceShipData infoSpaceShip;
-    public SpaceShipData infoSpaceShip2;
-    public SpaceShipData infoSpaceShip3;
+    public SpaceShipData[] infoNaves;
+    public GameObject[] representacionNaves;
+
     string ChoosenShip;
     int Ship = 0;
     public Image VerdeVel;
     public Image ColVida;
     public Image Potencia;
-    public GameObject Video;
-    public GameObject Nave2;
-    public GameObject Nave3;
+
+
     public GameObject Pantalla;
     public TextMeshProUGUI ShipName;
     public Button Ship1;
@@ -33,113 +31,75 @@ public class SpaceshipScreen : MonoBehaviour
         Potencia.fillAmount = 0;
     }
 
+    public void ActualizarUINave()
+    {
+        for (int i = 0; i < infoNaves.Length; i++)
+        {
+            if ((i + 1) == Ship)
+            {
+                ShipName.text = infoNaves[i].spaceshipName;
+                ActualizarFillAmount(ColVida, infoNaves[i].shield);
+                ActualizarFillAmount(Potencia, infoNaves[i].heat);
+                ActualizarFillAmount(VerdeVel, infoNaves[i].speed, (0.636f / 3f));
+                representacionNaves[i].SetActive(true);
+
+            }
+            else
+            {
+                representacionNaves[i].SetActive(false);
+            }
+        } 
+    }
+
+
+    void ActualizarFillAmount(Image imageGeneric, float valor, float reglaTres = 1.0f/3.0f)
+    {
+        if (imageGeneric.fillAmount < (valor * reglaTres))
+        {
+            imageGeneric.fillAmount += Time.deltaTime * speed;
+        }
+        else if (imageGeneric.fillAmount > (valor * reglaTres))
+        {
+            imageGeneric.fillAmount -= Time.deltaTime * speed;
+        }
+
+    }
+
     void Update()
     {
-        if(Ship == 1)
-    {
-            if (VerdeVel.fillAmount < (infoSpaceShip.speed * 0.636 / 3))
-            {
-                Debug.Log("Speed" + VerdeVel.fillAmount);
-                VerdeVel.fillAmount += Time.deltaTime * speed;
-            }
-
-            if (ColVida.fillAmount < (infoSpaceShip.shield * 1 / 3))
-            {
-                Debug.Log("Speed" + ColVida.fillAmount);
-                ColVida.fillAmount += Time.deltaTime * speed;
-            }
-
-            if (Potencia.fillAmount < (infoSpaceShip.heat * 1 / 3))
-            {
-                Debug.Log("Speed" + Potencia.fillAmount);
-                Potencia.fillAmount += Time.deltaTime * speed;
-            }
-            ShipName.text = infoSpaceShip.spaceshipName;
-        }
-
-        else
-            if (Ship == 2)
-        {
-            if (VerdeVel.fillAmount < (infoSpaceShip2.speed * 0.636 / 3))
-            {
-                Debug.Log("Speed" + VerdeVel.fillAmount);
-                VerdeVel.fillAmount += Time.deltaTime * speed;
-            }
-
-            if (ColVida.fillAmount < (infoSpaceShip2.shield * 1 / 3))
-            {
-                Debug.Log("Speed" + ColVida.fillAmount);
-                ColVida.fillAmount += Time.deltaTime * speed;
-            }
-
-            if (Potencia.fillAmount < (infoSpaceShip2.heat * 1 / 3))
-            {
-                Debug.Log("Speed" + Potencia.fillAmount);
-                Potencia.fillAmount += Time.deltaTime * speed;
-            }
-            ShipName.text = infoSpaceShip2.spaceshipName;
-        }
-
-        else
-            if (Ship == 3)
-        {
-            if (VerdeVel.fillAmount < (infoSpaceShip3.speed * 0.636 / 3))
-            {
-                Debug.Log("Speed" + VerdeVel.fillAmount);
-                VerdeVel.fillAmount += Time.deltaTime * speed;
-            }
-
-            if (ColVida.fillAmount < (infoSpaceShip3.shield * 1 / 3))
-            {
-                Debug.Log("Speed" + ColVida.fillAmount);
-                ColVida.fillAmount += Time.deltaTime * speed;
-            }
-
-            if (Potencia.fillAmount < (infoSpaceShip3.heat * 1 / 3))
-            {
-                Debug.Log("Speed" + Potencia.fillAmount);
-                Potencia.fillAmount += Time.deltaTime * speed;
-            }
-            ShipName.text = infoSpaceShip3.spaceshipName;
-        }
+        ActualizarUINave();
     }
 
     public void ClickShip1()
     {
         Ship = 1;
-        Video.SetActive(true);
-        Nave2.SetActive(false);
-        Nave3.SetActive(false);
+
+
         Pantalla.SetActive(false);
-        VerdeVel.fillAmount = 0;
-        ColVida.fillAmount = 0;
-        Potencia.fillAmount = 0;
+
+
         ButtonSound.Play(0);
     }
 
     public void ClickShip2()
     {
         Ship = 2;
-        Video.SetActive(false);
-        Nave2.SetActive(true);
-        Nave3.SetActive(false);
+
+
         Pantalla.SetActive(false);
-        VerdeVel.fillAmount = 0;
-        ColVida.fillAmount = 0;
-        Potencia.fillAmount = 0;
+
+
         ButtonSound.Play(0);
     }
 
     public void ClickShip3()
     {
         Ship = 3;
-        Video.SetActive(false);
-        Nave2.SetActive(false);
-        Nave3.SetActive(true);
+
+
         Pantalla.SetActive(false);
-        VerdeVel.fillAmount = 0;
-        ColVida.fillAmount = 0;
-        Potencia.fillAmount = 0;
+
+
         ButtonSound.Play(0);
     }
 }
