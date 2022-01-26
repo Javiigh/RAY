@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Movimiento : MonoBehaviour
 {
-    public float movSpeed = 2f;
+    public float movSpeed = 10f;
+    public float forceJump = 3f;
     void Start()
     {
         Application.targetFrameRate = 60;
@@ -21,23 +22,23 @@ public class Movimiento : MonoBehaviour
         Vector3 myMov = Vector3.zero;
         
 
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKey(KeyCode.W))
         {
-            myMov += Vector3.up;
+            myMov += Vector3.up * forceJump;
         }
-        if (Input.GetKeyDown(KeyCode.S))
+        if (Input.GetKey(KeyCode.S))
         {
             myMov += Vector3.down;
         }
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKey(KeyCode.A))
         {
             myMov += Vector3.left;
         }
-        if (Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKey(KeyCode.D))
         {
             myMov += Vector3.right;
         }
 
-        transform.Translate(myMov.normalized * Time.deltaTime * movSpeed);
+        transform.Translate(myMov * Time.deltaTime * movSpeed, Space.World);
     }
 }
