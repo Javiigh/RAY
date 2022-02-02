@@ -6,51 +6,100 @@ using TMPro;
 
 public class Movimiento : MonoBehaviour
 {
-    public GameObject PantallaIn;
-    public Button Comenzar;
     public GameObject Cubo;
-    public GameObject ParedIz;
-    public GameObject ParedDer;
-    public float movSpeed = 1f;
-    public float xrange = 1;
-    public float yrange = 1;
-    public float zrange = 0;
+    public GameObject PalaIz;
+    public GameObject PalaDer;
+    float timer = 35f;
 
+    public TextMeshProUGUI PointsText;
+    int Player1Points;
+    int Player2Points;
+
+    public GameObject ParedDer;
+    public GameObject ParedIz;
+
+    public float movSpeed;
+    public float xSpeed;
+    public float ySpeed;
 
     void Start()
     {
-        
-    }
+        movSpeed = Random.Range(5, 9);
 
-    public void ClickComenzar()
-    {
-        PantallaIn.SetActive(false);
-        Cubo.SetActive(true);
+        xSpeed = Random.Range(0, 2);
+
+        if(xSpeed==0)
+        {
+            xSpeed = 1;
+        }
+        else
+        {
+           xSpeed = -1;
+        }
+
+        ySpeed = Random.Range(0, 2);
+
+        if (ySpeed == 0)
+        {
+            ySpeed = 1;
+        }
+        else
+        {
+            ySpeed = -1;
+        }
     }
 
     void Update()
     {
-        //transform.Translate(Vector3.right * Time.deltaTime * movSpeed);
-        transform.Translate((xrange * Time.deltaTime * movSpeed)/40, (yrange * Time.deltaTime * movSpeed)/40, 0) ;
+        transform.Translate((movSpeed * xSpeed * Time.deltaTime), (movSpeed * ySpeed * Time.deltaTime), 0);
 
-        //transform.Translate(1 * Time.deltaTime * movSpeed, 0, zrange*0);
-
-        Debug.Log(xrange);
-        Debug.Log(yrange);
-        Debug.Log(zrange);
         Debug.Log("mov " + movSpeed);
+        Debug.Log("x " + xSpeed);
+        Debug.Log("y " + ySpeed);
+        Debug.Log("timer " + timer);
 
-    }
-
-    void RamdonPosition()
-    {
-        xrange = Random.Range(-1f, 1f);
-        yrange = Random.Range(-1f, 1f);
-       
+        PointsText.text = Player1Points + " - " + Player2Points;
+        timer = timer + Time.deltaTime;
+        if(timer < 1.5f)
+        {
+            transform.position = new Vector3(0, 0, 0);
+        }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        movSpeed = movSpeed * -1;
+        if (other.gameObject.tag == "ParedAbajo")
+        {
+            ySpeed = ySpeed * -1;
+        }
+
+        if (other.gameObject.tag == "ParedArriba")
+        {
+            ySpeed = ySpeed * -1;
+        }
+
+        if (other.gameObject.tag == "Pala.D")
+        {
+            xSpeed = xSpeed * -1;
+        }
+
+        if (other.gameObject.tag == "Pala.I")
+        {
+            xSpeed = xSpeed * -1;
+        }
+
+        if (other.gameObject.tag == "Player1Point")
+        {
+            Player1Points++;
+            movSpeed = movSpeed * -1;
+            timer = 0f;
+        }
+
+        if (other.gameObject.tag == "Player2Point")
+        {
+            Player2Points++;
+            movSpeed = movSpeed * -1;
+            timer = 0f;
+        }
     }
 }

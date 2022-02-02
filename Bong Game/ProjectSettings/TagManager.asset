@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Player1Point
+  - Player2Point
+  - ParedAbajo
+  - ParedArriba
+  - Pala.D
+  - Pala.I
   layers:
   - Default
   - TransparentFX
