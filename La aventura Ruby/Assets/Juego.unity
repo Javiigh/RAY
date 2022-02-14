@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -526,6 +526,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a0ffa41468ca30e4ba8fd9027d233e29, type: 3}
+--- !u!1 &813703534 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8808286988549915327, guid: 5a3b128e0e3a5434580e81ba1d217d39, type: 3}
+  m_PrefabInstance: {fileID: 8808286990424652473}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &813703535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 813703534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54d9118ca4ca0a441a013873db49fc54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 30
+  maxHealth: 5
+  timeInvincible: 2
 --- !u!1 &846017080
 GameObject:
   m_ObjectHideFlags: 0
@@ -5116,5 +5136,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ruby
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 727216652358238195, guid: 5a3b128e0e3a5434580e81ba1d217d39, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5a3b128e0e3a5434580e81ba1d217d39, type: 3}
