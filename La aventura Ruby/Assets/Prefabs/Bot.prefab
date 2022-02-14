@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 3705988305938376356}
   - component: {fileID: 916183079001907970}
   - component: {fileID: 4362747363304261359}
-  - component: {fileID: 1622415895134147752}
+  - component: {fileID: 387491234229014368}
+  - component: {fileID: 8253203105654319228}
   m_Layer: 0
   m_Name: Bot
   m_TagString: Untagged
@@ -132,7 +133,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &1622415895134147752
+--- !u!114 &387491234229014368
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -144,4 +145,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7dcb9b5541458534a9422db8644d0267, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
+  speed: 3
+  vertical: 0
+  changeTime: 3
+--- !u!95 &8253203105654319228
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4105001208624811406}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cc87d9eae0b270c489cea87caa6323e6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

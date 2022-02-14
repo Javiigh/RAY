@@ -4,22 +4,21 @@ using UnityEngine;
 
 public class RubyController : MonoBehaviour
 {
-    public float speed = 40f;
+    public float speed = 3.0f;
 
     public int maxHealth = 5;
-
-    public int health { get { return currentHealth; }}
-    int currentHealth;
-
     public float timeInvincible = 2.0f;
+
+    public int health { get { return currentHealth; } }
+    int currentHealth;
     bool isInvincible;
     float invincibleTimer;
 
-    Rigidbody2D rigibody2d;
+    Rigidbody2D rigidbody2d;
 
     void Start()
     {
-        rigibody2d = GetComponent<Rigidbody2D>();
+        rigidbody2d = GetComponent<Rigidbody2D>();
 
         currentHealth = maxHealth;
     }
@@ -29,11 +28,11 @@ public class RubyController : MonoBehaviour
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
 
-        Vector2 position = rigibody2d.position;
+        Vector2 position = rigidbody2d.position;
         position.x = position.x + speed * horizontal * Time.deltaTime;
         position.y = position.y + speed * vertical * Time.deltaTime;
 
-        rigibody2d.MovePosition(position);
+        rigidbody2d.MovePosition(position);
 
         if (isInvincible)
         {
@@ -55,6 +54,7 @@ public class RubyController : MonoBehaviour
         }
 
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
+
         Debug.Log(currentHealth + "/" + maxHealth);
     }
 
