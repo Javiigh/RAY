@@ -14,6 +14,8 @@ public class EnemyController : MonoBehaviour
 
     Animator animator;
 
+    bool Broken = true;
+
     void Start()
     {
         rigidbody2D = GetComponent<Rigidbody2D>();
@@ -23,6 +25,11 @@ public class EnemyController : MonoBehaviour
 
     void Update()
     {
+        if(!Broken)
+        {
+            return;
+        }
+
         timer -= Time.deltaTime;
 
         if (timer < 0)
@@ -58,5 +65,11 @@ public class EnemyController : MonoBehaviour
         {
             player.ChangeHealth(-1);
         }
+    }
+
+    public void Fix()
+    {
+        Broken = false;
+        rigidbody2D.simulated = false;
     }
 }

@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 8808286988549915326}
   - component: {fileID: 9213391815057780109}
   - component: {fileID: 5200776190971058893}
-  - component: {fileID: 727216652358238195}
   - component: {fileID: 7243181911359691675}
-  m_Layer: 0
+  - component: {fileID: 1875104557782560949}
+  m_Layer: 8
   m_Name: Ruby
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -120,7 +120,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.014908366, y: 0.18902095}
+  m_Offset: {x: -0.0078936815, y: 0.20305036}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -131,23 +131,8 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.34077078, y: 0.3780419}
+  m_Size: {x: 0.6915091, y: 0.40610072}
   m_EdgeRadius: 0
---- !u!114 &727216652358238195
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8808286988549915327}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54d9118ca4ca0a441a013873db49fc54, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 3
-  maxHealth: 5
-  timeInvincible: 2
 --- !u!95 &7243181911359691675
 Animator:
   serializedVersion: 3
@@ -167,3 +152,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1875104557782560949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8808286988549915327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54d9118ca4ca0a441a013873db49fc54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 30
+  maxHealth: 5
+  timeInvincible: 2
+  projectilePrefab: {fileID: 3143631520262833313, guid: bc74ac4a012e15147a66457e51021f59, type: 3}
