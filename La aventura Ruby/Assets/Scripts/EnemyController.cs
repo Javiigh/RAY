@@ -14,7 +14,8 @@ public class EnemyController : MonoBehaviour
 
     Animator animator;
 
-    bool Broken = true;
+    public bool Broken = true;
+    public ParticleSystem smokeEffect;
 
     void Start()
     {
@@ -70,6 +71,7 @@ public class EnemyController : MonoBehaviour
     public void Fix()
     {
         Broken = false;
+        smokeEffect.Stop();
         rigidbody2D.simulated = false;
     }
 }
