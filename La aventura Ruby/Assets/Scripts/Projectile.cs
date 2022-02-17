@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
+    // Se le la propiedad rigid body
     Rigidbody2D rigidbody2D;
 
     void Awake()
@@ -19,6 +20,7 @@ public class Projectile : MonoBehaviour
         }
     }
 
+    // hacer que el proyectil sea lanzado en la misma dirección que Ruby y con fuerza.
     public void Launch (Vector2 direction, float force)
     {
         rigidbody2D.AddForce(direction * force);
