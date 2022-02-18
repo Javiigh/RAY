@@ -17,6 +17,10 @@ public class EnemyController : MonoBehaviour
     public bool Broken = true;
     public ParticleSystem smokeEffect;
 
+    public GameObject closedoor;
+    public GameObject openDoor;
+    public int Robots = 3;
+
     void Start()
     {
         rigidbody2D = GetComponent<Rigidbody2D>();
@@ -28,6 +32,7 @@ public class EnemyController : MonoBehaviour
     {
         if(!Broken)
         {
+            Robots = Robots - 1;
             return;
         }
 
@@ -56,6 +61,13 @@ public class EnemyController : MonoBehaviour
         }
 
         rigidbody2D.MovePosition(position);
+
+        if(Robots <= 0)
+        {
+            closedoor.SetActive(false);
+            openDoor.SetActive(true);
+        }
+        Debug.Log(Robots);
     }
 
     void OnCollisionEnter2D(Collision2D other)

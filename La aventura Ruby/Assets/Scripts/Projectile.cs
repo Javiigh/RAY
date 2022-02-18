@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
+    public GameObject closedoor;
+    public GameObject openDoor;
+
     // Se le la propiedad rigid body
     Rigidbody2D rigidbody2D;
 
@@ -29,6 +32,7 @@ public class Projectile : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D other)
     {
         EnemyController e = other.collider.GetComponent<EnemyController>();
+
         if (e != null)
         {
             e.Fix();

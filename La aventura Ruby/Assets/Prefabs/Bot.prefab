@@ -171,6 +171,8 @@ MonoBehaviour:
   changeTime: 3
   Broken: 1
   smokeEffect: {fileID: 5701671522315110712}
+  closedoor: {fileID: 5128042519394694363, guid: 0bb62f03a60ba3f43afb0928c466bd95, type: 3}
+  openDoor: {fileID: 3008404018333342879, guid: caa34d26a07d28b499d619bff42c4331, type: 3}
 --- !u!82 &3071655692198372871
 AudioSource:
   m_ObjectHideFlags: 0

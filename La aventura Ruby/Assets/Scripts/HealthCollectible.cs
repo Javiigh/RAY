@@ -15,9 +15,11 @@ public class HealthCollectible : MonoBehaviour
             if (controller.health < controller.maxHealth)
             {
                 controller.ChangeHealth(1);
+                controller.invincibleTimer -= Time.deltaTime;
                 Destroy(gameObject);
 
                 controller.PlaySound(collectedClip);
+
             }
         }
     }

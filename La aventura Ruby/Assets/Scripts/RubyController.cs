@@ -11,8 +11,8 @@ public class RubyController : MonoBehaviour
 
     public int health { get { return currentHealth; } }
     int currentHealth;
-    bool isInvincible;
-    float invincibleTimer;
+    public bool isInvincible;
+    public float invincibleTimer = 30f;
 
     Rigidbody2D rigidbody2d;
 
@@ -35,6 +35,8 @@ public class RubyController : MonoBehaviour
 
     void Update()
     {
+        Debug.Log(invincibleTimer);
+
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
 
@@ -59,6 +61,7 @@ public class RubyController : MonoBehaviour
         if (isInvincible)
         {
             invincibleTimer -= Time.deltaTime;
+
             if (invincibleTimer < 0)
                 isInvincible = false;
         }
