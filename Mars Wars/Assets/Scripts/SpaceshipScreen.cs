@@ -48,7 +48,9 @@ public class SpaceshipScreen : MonoBehaviour
             {
                 representacionNaves[i].SetActive(false);
             }
-        } 
+        }
+
+        GameDataPersistent.instance.selectedSpaceship = Nave[currentNave];
     }
 
 
