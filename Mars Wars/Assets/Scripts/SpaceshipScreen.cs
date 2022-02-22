@@ -50,7 +50,7 @@ public class SpaceshipScreen : MonoBehaviour
             }
         }
 
-        GameDataPersistent.instance.selectedSpaceship = Nave[currentNave];
+        GameDataPersistent.instance.selectedSpaceship = infoNaves[i];
     }
 
 

@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class GameDataPersistent : MonoBehaviour
 {
-    public SpaceShipData selectedSpaceship;
+    public SpaceShipScriptable selectedSpaceship;
     public static GameDataPersistent instance;
 
-    private void Awake()
+    void Awake()
     {
         if (GameDataPersistent.instance == null)
         {
