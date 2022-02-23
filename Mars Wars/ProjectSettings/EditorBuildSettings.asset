@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SecondScene.unity
     guid: d365c87ab3fb49e48bba1eb7c2b26702
+  - enabled: 1
+    path: Assets/Scenes/GameScene.unity
+    guid: 0e460e5a952facb4eaccb22b69b1a08a
   - enabled: 0
     path: Assets/Scenes/StandbyScreen.unity
     guid: 569693114d77a1449b717e9f57e44b32

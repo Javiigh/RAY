@@ -33,7 +33,6 @@ public class LevelLoader : MonoBehaviour
         }
 
         Timer = Timer + Time.deltaTime;
-        Debug.Log(Timer);
 
         if(Timer >= 90f)
         {

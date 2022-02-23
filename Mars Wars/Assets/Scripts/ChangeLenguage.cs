@@ -37,13 +37,11 @@ public class ChangeLenguage : MonoBehaviour
 
         PlayerPrefs.SetInt("langIndex", index);
         PlayerPrefs.Save();
-
     }
 
     public void RestoreLang()
     {
         index = PlayerPrefs.GetInt("langIndex", 0);
         LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[index];
-
     }
 }

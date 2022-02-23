@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f8a12327bb5b01f459b7623b1b99d3ed, type: 3}
-  m_Name: Nave 3
+  m_Name: Razor Crest
   m_EditorClassIdentifier: 
-  spaceshipName: RazorCrest
+  spaceshipName: Razor Crest
   shield: 1
   speed: 3
   heat: 2

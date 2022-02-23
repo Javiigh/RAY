@@ -10,7 +10,7 @@ public class SpaceshipScreen : MonoBehaviour
     public GameObject[] representacionNaves;
 
     string ChoosenShip;
-    int Ship = 0;
+    public int Ship = 0;
     public Image VerdeVel;
     public Image ColVida;
     public Image Potencia;
@@ -18,10 +18,10 @@ public class SpaceshipScreen : MonoBehaviour
 
     public GameObject Pantalla;
     public TextMeshProUGUI ShipName;
+    public GameObject PressSpace;
     public Button Ship1;
     public Button Ship2;
     public Button Ship3;
-    public Button PlayGame;
     private float speed = 0.3f;
     public AudioSource ButtonSound;
 
@@ -79,6 +79,7 @@ public class SpaceshipScreen : MonoBehaviour
 
 
         Pantalla.SetActive(false);
+        PressSpace.SetActive(true);
 
 
         ButtonSound.Play(0);
@@ -90,6 +91,7 @@ public class SpaceshipScreen : MonoBehaviour
 
 
         Pantalla.SetActive(false);
+        PressSpace.SetActive(true);
 
 
         ButtonSound.Play(0);
@@ -101,16 +103,9 @@ public class SpaceshipScreen : MonoBehaviour
 
 
         Pantalla.SetActive(false);
+        PressSpace.SetActive(true);
 
 
         ButtonSound.Play(0);
-    }
-
-    public void ClickPlayGame()
-    {
-        LevelLoader NextLevel = other.GetComponent<LevelLoader>();
-
-        L;
-
     }
 }
