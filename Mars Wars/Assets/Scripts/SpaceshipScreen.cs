@@ -21,6 +21,7 @@ public class SpaceshipScreen : MonoBehaviour
     public Button Ship1;
     public Button Ship2;
     public Button Ship3;
+    public Button PlayGame;
     private float speed = 0.3f;
     public AudioSource ButtonSound;
 
@@ -50,7 +51,7 @@ public class SpaceshipScreen : MonoBehaviour
             }
         }
 
-        GameDataPersistent.instance.selectedSpaceship = infoNaves[i];
+        GameDataPersistent.instance.selectedSpaceship = infoNaves[Ship];
     }
 
 
@@ -103,5 +104,13 @@ public class SpaceshipScreen : MonoBehaviour
 
 
         ButtonSound.Play(0);
+    }
+
+    public void ClickPlayGame()
+    {
+        LevelLoader NextLevel = other.GetComponent<LevelLoader>();
+
+        L;
+
     }
 }

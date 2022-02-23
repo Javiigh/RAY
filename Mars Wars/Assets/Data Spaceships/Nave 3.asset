@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8a12327bb5b01f459b7623b1b99d3ed, type: 3}
   m_Name: Nave 3
   m_EditorClassIdentifier: 
-  spaceshipName: Nave 3
+  spaceshipName: RazorCrest
   shield: 1
   speed: 3
   heat: 2
+  prefab: {fileID: 4968333321617856081, guid: 9d4c37bbcc1e1dd41b63859ca8835eeb, type: 3}

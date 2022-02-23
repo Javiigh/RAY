@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameDataPersistent : MonoBehaviour
 {
-    public SpaceShipScriptable selectedSpaceship;
+    public SpaceShipData selectedSpaceship;
     public static GameDataPersistent instance;
 
     void Awake()
