@@ -19,9 +19,9 @@ public class SpaceshipScreen : MonoBehaviour
     public GameObject Pantalla;
     public TextMeshProUGUI ShipName;
     public GameObject PressSpace;
-    public Button Ship1;
-    public Button Ship2;
-    public Button Ship3;
+    public Button ShipStarship;
+    public Button ShipRazpr;
+    public Button ShipShuttle;
     private float speed = 0.3f;
     public AudioSource ButtonSound;
 
@@ -36,7 +36,7 @@ public class SpaceshipScreen : MonoBehaviour
     {
         for (int i = 0; i < infoNaves.Length; i++)
         {
-            if ((i + 1) == Ship)
+            if ((i) == Ship)
             {
                 ShipName.text = infoNaves[i].spaceshipName;
                 ActualizarFillAmount(ColVida, infoNaves[i].shield);
@@ -73,9 +73,11 @@ public class SpaceshipScreen : MonoBehaviour
         ActualizarUINave();
     }
 
-    public void ClickShip1()
+    public void ClickShipStarship()
     {
-        Ship = 1;
+        Ship = 0;
+
+        GameDataPersistent.instance.selectedSpaceship = infoNaves[Ship];
 
 
         Pantalla.SetActive(false);
@@ -85,10 +87,12 @@ public class SpaceshipScreen : MonoBehaviour
         ButtonSound.Play(0);
     }
 
-    public void ClickShip2()
+    public void ClickShipRazor()
     {
         Ship = 2;
 
+        GameDataPersistent.instance.selectedSpaceship = infoNaves[Ship];
+
 
         Pantalla.SetActive(false);
         PressSpace.SetActive(true);
@@ -97,9 +101,11 @@ public class SpaceshipScreen : MonoBehaviour
         ButtonSound.Play(0);
     }
 
-    public void ClickShip3()
+    public void ClickShipShittle()
     {
-        Ship = 3;
+        Ship = 1;
+
+        GameDataPersistent.instance.selectedSpaceship = infoNaves[Ship];
 
 
         Pantalla.SetActive(false);

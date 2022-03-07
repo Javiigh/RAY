@@ -6,6 +6,7 @@ public class GameDataPersistent : MonoBehaviour
 {
     public SpaceShipData selectedSpaceship;
     public static GameDataPersistent instance;
+    public GameObject Nave;
 
     void Awake()
     {
