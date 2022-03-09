@@ -8,6 +8,7 @@ public class SpaceshipScreen : MonoBehaviour
 {
     public SpaceShipData[] infoNaves;
     public GameObject[] representacionNaves;
+    public GameObject[] ObjectNaves;
 
     string ChoosenShip;
     public int Ship = 0;
@@ -17,6 +18,7 @@ public class SpaceshipScreen : MonoBehaviour
 
 
     public GameObject Pantalla;
+    public GameObject Nave;
     public TextMeshProUGUI ShipName;
     public GameObject PressSpace;
     public Button ShipStarship;
@@ -43,11 +45,12 @@ public class SpaceshipScreen : MonoBehaviour
                 ActualizarFillAmount(Potencia, infoNaves[i].heat);
                 ActualizarFillAmount(VerdeVel, infoNaves[i].speed, (0.636f / 3f));
                 representacionNaves[i].SetActive(true);
-
+                ObjectNaves[i].SetActive(true);
             }
             else
             {
                 representacionNaves[i].SetActive(false);
+                ObjectNaves[i].SetActive(false);
             }
         }
 
