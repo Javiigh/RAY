@@ -8,6 +8,6 @@ public class PlayerLoader : MonoBehaviour
     {
         //GameObject nave = Instantiate(GameDataPersistent.instance.selectedSpaceship.prefab);
         GameObject nave = Instantiate(GameDataPersistent.instance.selectedSpaceship.prefab);
-        nave.transform.localScale *= 10f;
+        //nave.transform.localScale *= 10f;
     }
 }
