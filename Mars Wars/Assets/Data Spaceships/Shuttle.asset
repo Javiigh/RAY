@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spaceshipName: Space Shuttle
   shield: 3
-  speed: 2
+  speed: 1
   heat: 1
   prefab: {fileID: 4016624025355910028, guid: c42cbb3b007cac44f8ddc35ec18fc54b, type: 3}
