@@ -5158,6 +5158,11 @@ MonoBehaviour:
         m_CallState: 1
   references:
     version: 1
+--- !u!1 &891819182 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 802252791129880428, guid: 5cb559494a0fc714a977ae59f24657d3, type: 3}
+  m_PrefabInstance: {fileID: 2610315445031821026}
+  m_PrefabAsset: {fileID: 0}
 --- !u!95 &900542607
 Animator:
   serializedVersion: 3
@@ -6088,11 +6093,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1035603688 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2952353374783204676, guid: 5cb559494a0fc714a977ae59f24657d3, type: 3}
-  m_PrefabInstance: {fileID: 2610315445031821026}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1037269393
 GameObject:
   m_ObjectHideFlags: 0
@@ -10085,16 +10085,6 @@ Transform:
   m_Father: {fileID: 604775543}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1696417000 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2952353376589069451, guid: 5cb559494a0fc714a977ae59f24657d3, type: 3}
-  m_PrefabInstance: {fileID: 2610315445031821026}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1703678538 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2952353375714593902, guid: 5cb559494a0fc714a977ae59f24657d3, type: 3}
-  m_PrefabInstance: {fileID: 2610315445031821026}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1711039249
 GameObject:
   m_ObjectHideFlags: 0
@@ -10500,15 +10490,15 @@ MonoBehaviour:
   - {fileID: 2068918866}
   - {fileID: 2071414203}
   ObjectNaves:
-  - {fileID: 1035603688}
-  - {fileID: 1696417000}
-  - {fileID: 1703678538}
+  - {fileID: 2016012434}
+  - {fileID: 891819182}
+  - {fileID: 2092164122}
   Ship: 0
   VerdeVel: {fileID: 248616670}
   ColVida: {fileID: 917982453}
   Potencia: {fileID: 844021428}
   Pantalla: {fileID: 1201772094}
-  Nave: {fileID: 2059235085}
+  Nave: {fileID: 0}
   ShipName: {fileID: 766625548}
   PressSpace: {fileID: 676836909}
   ShipStarship: {fileID: 1073779570}
@@ -11761,6 +11751,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2008246940}
   m_CullTransparentMesh: 1
+--- !u!1 &2016012434 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8943301539091106499, guid: 5cb559494a0fc714a977ae59f24657d3, type: 3}
+  m_PrefabInstance: {fileID: 2610315445031821026}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2027996309
 GameObject:
   m_ObjectHideFlags: 0
@@ -12472,6 +12467,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2088072693}
   m_CullTransparentMesh: 1
+--- !u!1 &2092164122 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6696340924554980876, guid: 5cb559494a0fc714a977ae59f24657d3, type: 3}
+  m_PrefabInstance: {fileID: 2610315445031821026}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2106389982
 GameObject:
   m_ObjectHideFlags: 0

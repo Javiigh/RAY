@@ -7,7 +7,8 @@ public class StarshipShipController : MonoBehaviour
     float speed;
     float ColissionSpeed;
 
-    //public GameObject Nave;
+    public SpaceshipScreen s;
+
     void Start()
     {
         speed = -0.005f;
@@ -15,6 +16,7 @@ public class StarshipShipController : MonoBehaviour
 
     void Update()
     {
+
         if (Input.GetKey(KeyCode.RightArrow))
         {
             if (transform.localPosition.x > 9)

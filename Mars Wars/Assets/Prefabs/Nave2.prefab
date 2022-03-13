@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5744552953628626155}
   - component: {fileID: 8653415913543664462}
   - component: {fileID: 6914130046867961732}
-  - component: {fileID: 4154940380649666963}
+  - component: {fileID: 2335133797759128052}
   m_Layer: 0
   m_Name: Nave2
   m_TagString: Untagged
@@ -84,7 +84,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &4154940380649666963
+--- !u!114 &2335133797759128052
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -93,7 +93,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4968333321617856081}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f8f7bae1c96bcd46b5b181381cf43bd, type: 3}
+  m_Script: {fileID: 11500000, guid: c7047c31375f2d6429db14288e6ca154, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectilePrefab: {fileID: 6369195259817138007, guid: ca3a09b09000da74fb21443648587163, type: 3}
+  s: {fileID: 0}

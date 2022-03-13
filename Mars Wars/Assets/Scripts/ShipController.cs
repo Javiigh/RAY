@@ -2,19 +2,42 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RazorController : MonoBehaviour
+public class ShipController : MonoBehaviour
 {
     float speed;
     float ColissionSpeed;
 
-    //public GameObject Nave;
+    public SpaceshipScreen s;
+    public int ship;
+
     void Start()
     {
-        speed = 0.009f;
+       
     }
 
     void Update()
     {
+        s = FindObjectOfType<SpaceshipScreen>();
+        Debug.Log("s.ship " + s.Ship);
+        Debug.Log(speed);
+        Debug.Log("ship" + ship);
+
+        ship = s.Ship;
+
+        if (s.Ship == 0)
+        {
+            speed = -0.005f;
+        }
+        else if (s.Ship == 1)
+        {
+            speed = 0.002f;
+        }
+
+        else
+        {
+            speed = 0.009f;
+        }
+
         if (Input.GetKey(KeyCode.RightArrow))
         {
             if (transform.localPosition.x > 9)
