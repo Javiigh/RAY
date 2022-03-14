@@ -11,8 +11,10 @@ GameObject:
   - component: {fileID: 5744552953628626155}
   - component: {fileID: 8653415913543664462}
   - component: {fileID: 6914130046867961732}
-  - component: {fileID: 2335133797759128052}
-  m_Layer: 0
+  - component: {fileID: 5145385001064448784}
+  - component: {fileID: 2984103718863363588}
+  - component: {fileID: 6866802674304599846}
+  m_Layer: 6
   m_Name: Nave2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84,7 +86,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &2335133797759128052
+--- !u!114 &5145385001064448784
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -96,4 +98,56 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7047c31375f2d6429db14288e6ca154, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  s: {fileID: 0}
+  infoNaves:
+  - {fileID: 11400000, guid: 0ab39e3dfe82536478290dbe3ef726c4, type: 2}
+  - {fileID: 11400000, guid: 6924bad87510d6644a98ac1928e69378, type: 2}
+  - {fileID: 11400000, guid: d327a1c0b22fd8c45a0a269de30aa95a, type: 2}
+  Ship: 2
+  DisparoPrefab: {fileID: 4883674997161253951, guid: 883404c83a58a8947abc70e1c252ec4f, type: 3}
+--- !u!61 &2984103718863363588
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4968333321617856081}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.5}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 6, y: 6}
+  m_EdgeRadius: 0
+--- !u!50 &6866802674304599846
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4968333321617856081}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

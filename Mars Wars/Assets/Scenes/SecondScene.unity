@@ -2295,6 +2295,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectedSpaceship: {fileID: 0}
   Nave: {fileID: 2059235085}
+  ship: {fileID: 0}
 --- !u!1 &396638523
 GameObject:
   m_ObjectHideFlags: 0
@@ -13672,6 +13673,34 @@ PrefabInstance:
     - target: {fileID: 2610315445461004783, guid: 5cb559494a0fc714a977ae59f24657d3, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4068212348407998889, guid: 5cb559494a0fc714a977ae59f24657d3, type: 3}
+      propertyPath: s
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4334114873543215758, guid: 5cb559494a0fc714a977ae59f24657d3, type: 3}
+      propertyPath: s
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6878450353320737613, guid: 5cb559494a0fc714a977ae59f24657d3, type: 3}
+      propertyPath: infoNaves.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6878450353320737613, guid: 5cb559494a0fc714a977ae59f24657d3, type: 3}
+      propertyPath: infoNaves.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 0ab39e3dfe82536478290dbe3ef726c4, type: 2}
+    - target: {fileID: 6878450353320737613, guid: 5cb559494a0fc714a977ae59f24657d3, type: 3}
+      propertyPath: infoNaves.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: 6924bad87510d6644a98ac1928e69378, type: 2}
+    - target: {fileID: 6878450353320737613, guid: 5cb559494a0fc714a977ae59f24657d3, type: 3}
+      propertyPath: infoNaves.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: d327a1c0b22fd8c45a0a269de30aa95a, type: 2}
+    - target: {fileID: 8348360138818631437, guid: 5cb559494a0fc714a977ae59f24657d3, type: 3}
+      propertyPath: s
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5cb559494a0fc714a977ae59f24657d3, type: 3}

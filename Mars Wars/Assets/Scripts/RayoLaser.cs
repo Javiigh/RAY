@@ -4,19 +4,34 @@ using UnityEngine;
 
 public class RayoLaser : MonoBehaviour
 {
-    public GameObject Laser;
+    public float speed = 0.02f;
+    Rigidbody2D rigidbody2D;
 
-    void Start()
+    void Awake()
     {
-        
+        rigidbody2D = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.C))
+        if (transform.position.magnitude > 200.0f)
         {
-           Laser.SetActive(true);
+            Destroy(gameObject);
         }
+        else
+        {
+            Launch();
+        }
+    }
+
+    public void Launch()
+    {
+        transform.Translate(0, speed, 0);
+    }
+
+    void OnCollisionEnter(Collision other)
+    {
+        Debug.Log("Projectile Collision with " + other.gameObject);
+        Destroy(gameObject);
     }
 }

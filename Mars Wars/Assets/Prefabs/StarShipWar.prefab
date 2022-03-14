@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 8963039715621997069}
   - component: {fileID: 5461958938772702632}
   - component: {fileID: 7793534125264204130}
-  - component: {fileID: 3968214776706978042}
-  m_Layer: 0
+  - component: {fileID: 2840606672563569280}
+  m_Layer: 6
   m_Name: StarShipWar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86,7 +86,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &3968214776706978042
+--- !u!114 &2840606672563569280
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -98,4 +98,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7047c31375f2d6429db14288e6ca154, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  s: {fileID: 0}
+  infoNaves:
+  - {fileID: 11400000, guid: 0ab39e3dfe82536478290dbe3ef726c4, type: 2}
+  - {fileID: 11400000, guid: 6924bad87510d6644a98ac1928e69378, type: 2}
+  - {fileID: 11400000, guid: d327a1c0b22fd8c45a0a269de30aa95a, type: 2}
+  Ship: 0
+  DisparoPrefab: {fileID: 0}

@@ -8,6 +8,8 @@ public class GameDataPersistent : MonoBehaviour
     public static GameDataPersistent instance;
     public GameObject Nave;
 
+    public ShipController ship;
+
     void Awake()
     {
         if (GameDataPersistent.instance == null)

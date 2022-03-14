@@ -1,41 +1,53 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class ShipController : MonoBehaviour
 {
-    float speed;
+    public SpaceShipData[] infoNaves;
+
+    public int Ship;
+        
+    float speedMov;
     float ColissionSpeed;
 
-    public SpaceshipScreen s;
-    public int ship;
+    public GameObject DisparoPrefab;
+    Rigidbody2D rigidbody2D;
+    Vector2 lookDirection = new Vector2(1, 0);
+    public float speed = 3.0f;
 
     void Start()
     {
-       
+        rigidbody2D = GetComponent<Rigidbody2D>();
+    }
+
+    public void VelNave()
+    {
+        for (int i = 0; i < infoNaves.Length; i++)
+        {
+            //Debug.Log("kk" + infoNaves[i].speed);
+
+            if ((i) == Ship)
+            {
+                speedMov = infoNaves[i].speed;
+            }
+            else
+            {
+                
+            }
+        }
+
     }
 
     void Update()
     {
-        s = FindObjectOfType<SpaceshipScreen>();
-        Debug.Log("s.ship " + s.Ship);
-        Debug.Log(speed);
-        Debug.Log("ship" + ship);
+        VelNave();
 
-        ship = s.Ship;
-
-        if (s.Ship == 0)
+        if (Ship == 0)
         {
-            speed = -0.005f;
-        }
-        else if (s.Ship == 1)
-        {
-            speed = 0.002f;
-        }
-
-        else
-        {
-            speed = 0.009f;
+            speedMov = -speedMov;
         }
 
         if (Input.GetKey(KeyCode.RightArrow))
@@ -46,7 +58,7 @@ public class ShipController : MonoBehaviour
             }
             else
             {
-                ColissionSpeed = speed;
+                ColissionSpeed = speedMov / 350;
             }
 
             transform.Translate(ColissionSpeed, 0, 0);
@@ -60,10 +72,27 @@ public class ShipController : MonoBehaviour
             }
             else
             {
-                ColissionSpeed = speed;
+                ColissionSpeed = speedMov / 350;
             }
 
             transform.Translate(-ColissionSpeed, 0, 0);
         }
+        //Debug.Log("velocidad " + ColissionSpeed);
+        //Debug.Log("mov " + speedMov);
+        //Debug.Log("ship " + Ship);
+
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            Launch();
+        }
+
+    }
+
+    void Launch()
+    {
+        GameObject RayoObject = Instantiate(DisparoPrefab, rigidbody2D.position + Vector2.up * 0.5f, Quaternion.identity);
+
+        Projectile RayoLaser = RayoObject.GetComponent<Projectile>();
+        //RayoLaser.Launch();
     }
 }

@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    // Se le la propiedad rigid body
     Rigidbody2D rigidbody2D;
 
     void Awake()
