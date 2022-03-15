@@ -18,6 +18,8 @@ public class ShipController : MonoBehaviour
     Vector2 lookDirection = new Vector2(1, 0);
     public float speed = 3.0f;
 
+    float cadence = 1.0f;
+
     void Start()
     {
         rigidbody2D = GetComponent<Rigidbody2D>();
@@ -27,7 +29,6 @@ public class ShipController : MonoBehaviour
     {
         for (int i = 0; i < infoNaves.Length; i++)
         {
-            //Debug.Log("kk" + infoNaves[i].speed);
 
             if ((i) == Ship)
             {
@@ -80,19 +81,22 @@ public class ShipController : MonoBehaviour
         //Debug.Log("velocidad " + ColissionSpeed);
         //Debug.Log("mov " + speedMov);
         //Debug.Log("ship " + Ship);
+        //Debug.Log("cadencia " + cadence);
 
-        if (Input.GetKeyDown(KeyCode.C))
+        cadence = cadence - Time.deltaTime;
+
+        if(cadence <= 0)
         {
-            Launch();
+            if (Input.GetKeyDown(KeyCode.C))
+            {
+                cadence = 1.0f;
+                Launch();
+            }
         }
-
     }
 
     void Launch()
     {
         GameObject RayoObject = Instantiate(DisparoPrefab, rigidbody2D.position + Vector2.up * 0.5f, Quaternion.identity);
-
-        Projectile RayoLaser = RayoObject.GetComponent<Projectile>();
-        //RayoLaser.Launch();
     }
 }

@@ -47,7 +47,7 @@ public class EnemiesController : MonoBehaviour
             {
                 for (int y = 0; y < enemiesList[x].enemies.Length; y++) 
                 {
-                    if (enemiesList[x].enemies[y].activeSelf == false && FoundLastActive == false) //Al encontrar el desactivado paro la bisqueda
+                    if (enemiesList[x].enemies[y].activeSelf == false && FoundLastActive == false) //Al encontrar el desactivado paro la busqueda
                     {
                         FoundLastActive = true;
                         Debug.Log("Encontrado primero no activo x =" + lastX + "y = " + lastY);
@@ -59,7 +59,6 @@ public class EnemiesController : MonoBehaviour
                     }
                 }
             }
-
             enemiesList[lastX].enemies[lastY].SetActive(false);
         }
     }

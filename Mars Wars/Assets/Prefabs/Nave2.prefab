@@ -29,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4968333321617856081}
   m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
-  m_LocalPosition: {x: -0, y: -3.25, z: 0}
+  m_LocalPosition: {x: -0, y: -3.25, z: -0.1}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children: []
   m_Father: {fileID: 0}
@@ -104,6 +104,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d327a1c0b22fd8c45a0a269de30aa95a, type: 2}
   Ship: 2
   DisparoPrefab: {fileID: 4883674997161253951, guid: 883404c83a58a8947abc70e1c252ec4f, type: 3}
+  speed: 3
 --- !u!61 &2984103718863363588
 BoxCollider2D:
   m_ObjectHideFlags: 0

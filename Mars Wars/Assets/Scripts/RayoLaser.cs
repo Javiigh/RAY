@@ -14,7 +14,7 @@ public class RayoLaser : MonoBehaviour
 
     void Update()
     {
-        if (transform.position.magnitude > 200.0f)
+        if (transform.position.magnitude > 20.0f)
         {
             Destroy(gameObject);
         }
@@ -29,9 +29,10 @@ public class RayoLaser : MonoBehaviour
         transform.Translate(0, speed, 0);
     }
 
-    void OnCollisionEnter(Collision other)
+    void OnCollisionEnter2D(Collision2D other)
     {
-        Debug.Log("Projectile Collision with " + other.gameObject);
+        //Debug.Log("Projectile Collision with " + other.gameObject);
         Destroy(gameObject);
+        //other.gameObject.SetActive(false);
     }
 }
