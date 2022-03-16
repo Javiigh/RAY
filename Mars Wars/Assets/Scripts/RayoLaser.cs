@@ -6,6 +6,7 @@ public class RayoLaser : MonoBehaviour
 {
     public float speed = 0.02f;
     Rigidbody2D rigidbody2D;
+    public GameObject inBunkers;
 
     void Awake()
     {
@@ -22,6 +23,8 @@ public class RayoLaser : MonoBehaviour
         {
             Launch();
         }
+
+        inBunkers.SetActive(true);
     }
 
     public void Launch()
@@ -33,6 +36,6 @@ public class RayoLaser : MonoBehaviour
     {
         //Debug.Log("Projectile Collision with " + other.gameObject);
         Destroy(gameObject);
-        //other.gameObject.SetActive(false);
+        other.gameObject.SetActive(false);
     }
 }

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6050882594118211028}
   - component: {fileID: 1231315194291943436}
   - component: {fileID: -1441182356355280060}
-  - component: {fileID: 1287100664540601298}
+  - component: {fileID: 51867997557671037}
   m_Layer: 9
   m_Name: Bunker normal
   m_TagString: Untagged
@@ -29,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6050882594118211029}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: -4.66, y: -5.7921867, z: -5.8843765}
+  m_LocalPosition: {x: -0.39, y: -0.65, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -133,7 +133,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 26.962143, y: 13.589567}
   m_EdgeRadius: 0
---- !u!114 &1287100664540601298
+--- !u!114 &51867997557671037
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -142,6 +142,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 6050882594118211029}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d1d9e2ed6f6ba247ad32af03bd4d1f2, type: 3}
+  m_Script: {fileID: 11500000, guid: dc6828b1883f002439de956be878d998, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bunker1: {fileID: 6050882594118211029}
+  bunker2: {fileID: 589747247415857637, guid: 9c9743aa24292fa46933e5f95b1f4579, type: 3}
+  bunker3: {fileID: 1516573494832168199, guid: 97190184d3eb65c43be293f2bb2d6c50, type: 3}

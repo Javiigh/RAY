@@ -145,3 +145,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.02
+  inBunkers: {fileID: 4400027417877400574, guid: 7a01f338364cf8740a74da7f4f4eecc6, type: 3}
