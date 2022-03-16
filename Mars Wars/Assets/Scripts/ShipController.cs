@@ -51,6 +51,11 @@ public class ShipController : MonoBehaviour
             speedMov = -speedMov;
         }
 
+        if(Ship == 1)
+        {
+            speedMov = -speedMov;
+        }
+
         if (Input.GetKey(KeyCode.RightArrow))
         {
             if (transform.localPosition.x > 9)

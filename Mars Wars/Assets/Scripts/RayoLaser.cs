@@ -24,7 +24,7 @@ public class RayoLaser : MonoBehaviour
             Launch();
         }
 
-        inBunkers.SetActive(true);
+        //inBunkers.SetActive(true);
     }
 
     public void Launch()
@@ -34,8 +34,16 @@ public class RayoLaser : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D other)
     {
-        //Debug.Log("Projectile Collision with " + other.gameObject);
+        if (other.gameObject.tag == "InBunkers")
+        {
+            //Debug.Log("ll");
+        }
+
+        else
+        {
+            //Debug.Log("сс");
+            other.gameObject.SetActive(false);
+        }
         Destroy(gameObject);
-        other.gameObject.SetActive(false);
     }
 }

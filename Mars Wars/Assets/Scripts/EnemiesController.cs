@@ -14,9 +14,16 @@ public class EnemiesController : MonoBehaviour
 
     public EnemiesList[] enemiesList;
 
+    public GameObject LaserPrefab;
+    Vector2 Aim = new Vector2(0, 0);
+    Rigidbody2D rigidbody2D;
+    GameObject alien;
+    Transform dispara;
+
     void Start()
     {
         PrintArray();
+        rigidbody2D = GetComponent<Rigidbody2D>();
     }
 
     void PrintArray()
@@ -35,7 +42,23 @@ public class EnemiesController : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Shot();
+        }
+
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            alien.gameObject.SetActive(false);
+        }
+
+        EnemigoAbajo();
+
+        dispara = this.GetComponent<Transform>();
+        alien = this.GetComponent<GameObject>();
+        //Debug.LogFormat("l", alien.Position);
+
+        /*if (Input.GetKeyUp(KeyCode.Space))
         {
             int lastX = enemiesList.Length-1;
             int lastY = enemiesList[lastX].enemies.Length-1;
@@ -60,8 +83,49 @@ public class EnemiesController : MonoBehaviour
                 }
             }
             enemiesList[lastX].enemies[lastY].SetActive(false);
-        }
+        }*/
     }
     // Bucle con x y otro con y, hay que ir almacenando la última x e y donde el enemigo está activo, una vez hay un enemigo dessactivado debemos dejar de contr (usar boleano).
     //desaactivar el enemigo[x].enemieList[y]
+
+    public void shots()
+    {
+        //Debug.Log(lastX);
+    }
+
+    void Shot()
+    {
+        //GameObject AzulObject = Instantiate(LaserPrefab, rigidbody2D.position + Vector2.up * 0.5f, Quaternion.identity);
+        GameObject AzulObject = Instantiate(LaserPrefab, Aim + Vector2.up * 0.5f, Quaternion.identity);
+    }
+
+    void EnemigoAbajo()
+    {
+        int lastX = enemiesList.Length - 1;
+        int lastY = enemiesList[lastX].enemies.Length - 1;
+        bool FoundLastActive = false;
+
+        //Aqui va el nuevo bucle que calcula la ultima x e y 
+
+        for (int x = 0; x < enemiesList.Length; x++)
+        {
+            for (int y = 0; y < enemiesList[x].enemies.Length; y++)
+            {
+                if (enemiesList[x].enemies[y].activeSelf == false && FoundLastActive == false) //Al encontrar el desactivado paro la busqueda
+                {
+                    FoundLastActive = true;
+                    Debug.Log("Encontrado primero no activo x =" + lastX + "y = " + lastY);
+                }
+                else if (enemiesList[x].enemies[y].activeSelf == true && FoundLastActive == false)
+                {
+                    lastX = x;
+                    lastY = y;
+                }
+            }
+        }
+        //enemiesList[lastX].enemies[lastY].SetActive(false);
+        enemiesList[lastX].enemies[lastY] = alien;
+
+        //Aim = dispara;
+    }
 }
