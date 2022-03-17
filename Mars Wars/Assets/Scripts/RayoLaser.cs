@@ -6,7 +6,7 @@ public class RayoLaser : MonoBehaviour
 {
     public float speed = 0.02f;
     Rigidbody2D rigidbody2D;
-    public GameObject inBunkers;
+    
 
     void Awake()
     {

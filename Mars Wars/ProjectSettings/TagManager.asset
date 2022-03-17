@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - InBunkers
+  - Alien1
+  - Laterales
   layers:
   - Default
   - TransparentFX
