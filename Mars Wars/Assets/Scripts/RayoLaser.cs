@@ -6,6 +6,8 @@ public class RayoLaser : MonoBehaviour
 {
     public float speed = 0.02f;
     Rigidbody2D rigidbody2D;
+
+    public CounterPoints CounterPoints;
     
 
     void Awake()
@@ -36,14 +38,28 @@ public class RayoLaser : MonoBehaviour
     {
         if (other.gameObject.tag == "InBunkers")
         {
-            //Debug.Log("ll");
+            
         }
 
         else
         {
-            //Debug.Log("сс");
+            if (other.gameObject.tag == "Alien1")
+            {
+                CounterPoints.PuntoVerde();
+                Debug.Log("Si");
+            }
+            if (other.gameObject.tag == "Alien2")
+            {
+                CounterPoints.PuntoRojo();
+            }
+            if (other.gameObject.tag == "Alien3")
+            {
+                CounterPoints.PuntoAzul();
+            }
             other.gameObject.SetActive(false);
         }
         Destroy(gameObject);
     }
+
+    
 }

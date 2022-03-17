@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 3643596618557941066}
   m_Layer: 8
   m_Name: Alien 11
-  m_TagString: Untagged
+  m_TagString: Alien3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -105,7 +105,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7
 --- !u!61 &4691328355875759152
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -145,3 +145,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
+  choque: 0
+  BigMove: {fileID: 2913415119838995028, guid: 88909b31a6682e6459c9ca9fe91c1f3f, type: 3}
+  laserAzulPrefab: {fileID: 3931748792814790799, guid: da055c4a5e38a554a977524988d6e521, type: 3}

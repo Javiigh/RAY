@@ -6,12 +6,15 @@ TagManager:
   tags:
   - InBunkers
   - Alien1
-  - Laterales
+  - LateralD
+  - LateralI
+  - Alien2
+  - Alien3
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Laser Azul
   - Water
   - UI
   - Ships

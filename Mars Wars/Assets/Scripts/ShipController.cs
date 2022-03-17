@@ -9,7 +9,7 @@ public class ShipController : MonoBehaviour
     public SpaceShipData[] infoNaves;
 
     public int Ship;
-        
+
     float speedMov;
     float ColissionSpeed;
 
@@ -98,6 +98,7 @@ public class ShipController : MonoBehaviour
                 Launch();
             }
         }
+
     }
 
     void Launch()

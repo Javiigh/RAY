@@ -45,7 +45,6 @@ public class InBunker : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D other)
     {
-        //Debug.Log("hola");
         cuenta++;
         //bunker1.gameObject.SetActive(false);
         //Destroy(gameObject);

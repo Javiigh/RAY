@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using Random = UnityEngine.Random;
 
 public class EnemiesController : MonoBehaviour
 {
@@ -15,10 +16,12 @@ public class EnemiesController : MonoBehaviour
     public EnemiesList[] enemiesList;
 
     public GameObject LaserPrefab;
-    Vector2 Aim = new Vector2(0, 0);
+    Vector2 Aim;
     Rigidbody2D rigidbody2D;
+    public AlienMove alienMove;
 
-    public int points;
+    public int Shoter;
+    float timer;
 
     void Awake()
     {
@@ -47,53 +50,37 @@ public class EnemiesController : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        //Debug.Log(Shoter);
+
+        timer = timer + Time.deltaTime;
+
+        if (timer > 2.5)
+        {
+            ChooseShoter();
+            timer = 0;
+        }
+
+        if (Input.GetKeyDown(KeyCode.U))
         {
             Shot();
         }
 
+
         if (Input.GetKeyDown(KeyCode.D))
         {
-            
+            EnemigoAbajo();
         }
 
-        EnemigoAbajo();
-
-        /*if (Input.GetKeyUp(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.P))
         {
-            int lastX = enemiesList.Length-1;
-            int lastY = enemiesList[lastX].enemies.Length-1;
-            bool FoundLastActive = false;
-
-            //Aqui va el bucle que calcula la ultima x e y 
-
-            for (int x = 0; x < enemiesList.Length; x++)
-            {
-                for (int y = 0; y < enemiesList[x].enemies.Length; y++) 
-                {
-                    if (enemiesList[x].enemies[y].activeSelf == false && FoundLastActive == false) //Al encontrar el desactivado paro la busqueda
-                    {
-                        FoundLastActive = true;
-                        Debug.Log("Encontrado primero no activo x =" + lastX + "y = " + lastY);
-                    }
-                    else if (enemiesList[x].enemies[y].activeSelf == true && FoundLastActive == false)
-                    {
-                        lastX = x;
-                        lastY = y;
-                    }
-                }
-            }
-            enemiesList[lastX].enemies[lastY].SetActive(false);
-        }*/
-
+            alienMove.LaunchAlien();
+        }
     }
-    // Bucle con x y otro con y, hay que ir almacenando la última x e y donde el enemigo está activo, una vez hay un enemigo dessactivado debemos dejar de contr (usar boleano).
-    //desaactivar el enemigo[x].enemieList[y]
 
     void Shot()
     {
-        //GameObject AzulObject = Instantiate(LaserPrefab, rigidbody2D.position + Vector2.up * 0.5f, Quaternion.identity);
-        GameObject AzulObject = Instantiate(LaserPrefab, Aim + Vector2.up * 0.5f, Quaternion.identity);
+        EnemigoAbajo();
+        GameObject AzulObject = Instantiate(LaserPrefab, Aim + Vector2.up * 0.2f, Quaternion.identity);
     }
 
     void EnemigoAbajo()
@@ -102,8 +89,6 @@ public class EnemiesController : MonoBehaviour
         int lastY = enemiesList[lastX].enemies.Length - 1;
         bool FoundLastActive = false;
 
-        //Aqui va el nuevo bucle que calcula la ultima x e y 
-
         for (int x = 0; x < enemiesList.Length; x++)
         {
             for (int y = 0; y < enemiesList[x].enemies.Length; y++)
@@ -111,7 +96,7 @@ public class EnemiesController : MonoBehaviour
                 if (enemiesList[x].enemies[y].activeSelf == false && FoundLastActive == false) //Al encontrar el desactivado paro la busqueda
                 {
                     FoundLastActive = true;
-                    Debug.Log("Encontrado primero no activo x =" + lastX + "y = " + lastY);
+                    //Debug.Log("Encontrado primero no activo x =" + lastX + "y = " + lastY);
                 }
                 else if (enemiesList[x].enemies[y].activeSelf == true && FoundLastActive == false)
                 {
@@ -121,5 +106,16 @@ public class EnemiesController : MonoBehaviour
             }
         }
         //enemiesList[lastX].enemies[lastY].SetActive(false);
+        //enemiesList[lastX].enemies[lastY].transform.Translate(0, 0, 20);
+        //enemiesList[lastX].enemies[lastY].transform.localPosition = Aim;
+        //Debug.Log(enemiesList[lastX].enemies[lastY].transform.localPosition);
+        Aim = enemiesList[lastX].enemies[Shoter].transform.localPosition;
+        Aim = Aim - new Vector2(0, -2);
+    }
+
+    void ChooseShoter()
+    {
+        Shoter = Random.Range(0, 6);
+        Shot();
     }
 }

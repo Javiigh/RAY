@@ -15,6 +15,10 @@ public class AlienMove : MonoBehaviour
 
     public int choque;
 
+    public BigMove BigMove;
+
+    public GameObject laserAzulPrefab;
+
     void Awake()
     {
         rigidbody2D = GetComponent<Rigidbody2D>();
@@ -22,72 +26,37 @@ public class AlienMove : MonoBehaviour
 
     void Start()
     {
-        
+
     }
 
     void Update()
     {
-        timeX = timeX + Time.deltaTime;
-        timeY = timeY + Time.deltaTime;
-
-        //Debug.Log(timeX);
-        Debug.Log(choque);
-        Debug.Log(EjeXSpeed);
-
-        if (Input.GetKey(KeyCode.L))
+        if (Input.GetKeyDown(KeyCode.Q))
         {
-            movXD();
+            LaunchAlien();
         }
     }
 
-    void Launch()
+    public void LaunchAlien()
     {
-        //GameObject RayoObject = Instantiate(DisparoPrefab, rigidbody2D.position + Vector2.up * 0.5f, Quaternion.identity);
-    }
-
-    void movXD()
-    {
-        EjeXSpeed = speedMov / 10;
-
-        if (choque == 1)
-        {
-            transform.Translate(-EjeXSpeed, 0, 0);
-        }
-        else
-        {
-            transform.Translate(EjeXSpeed, 0, 0);
-        }
-
-    }
-
-    void movY()
-    {
-        if (transform.localPosition.x > 9)
-        {
-            //ColissionSpeed = 0;
-        }
-        else
-        {
-            //ColissionSpeed = speedMov / 10;
-        }
-
-        //transform.Translate(ColissionSpeed, 0, 0);
+        //Debug.Log("Lanzando");
+        GameObject LaserObject = Instantiate(laserAzulPrefab, rigidbody2D.position + Vector2.up * 0.5f, Quaternion.identity);
     }
 
     void OnCollisionEnter2D(Collision2D other)
     {
-        Debug.Log("col");
-        choque++;
-
-        if (other.gameObject.tag == "Laterales")
+        //Debug.Log("col");
+        if (other.gameObject.tag == "LateralD")
         {
-            EjeXSpeed = -EjeXSpeed;
+            BigMove.ColisionD();
         }
 
         else
         {
-            
+          if (other.gameObject.tag == "LateralI")
+            {
+                BigMove.ColisionI();
+            }
         }
-        
     }
 }

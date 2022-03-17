@@ -22,6 +22,7 @@ public class laserAzul : MonoBehaviour
         {
             Launch();
         }
+
     }
 
     public void Launch()
@@ -33,12 +34,11 @@ public class laserAzul : MonoBehaviour
     {
         if (other.gameObject.tag == "InBunkers")
         {
-            //Debug.Log("ll");
+            
         }
 
         else
         {
-            //Debug.Log("сс");
             //other.gameObject.SetActive(false);
         }
         Destroy(gameObject);
