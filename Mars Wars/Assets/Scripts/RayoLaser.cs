@@ -5,16 +5,7 @@ using UnityEngine;
 public class RayoLaser : MonoBehaviour
 {
     public float speed = 0.02f;
-    Rigidbody2D rigidbody2D;
-
-    public CounterPoints CounterPoints;
     
-
-    void Awake()
-    {
-        rigidbody2D = GetComponent<Rigidbody2D>();
-    }
-
     void Update()
     {
         if (transform.position.magnitude > 20.0f)
@@ -45,16 +36,16 @@ public class RayoLaser : MonoBehaviour
         {
             if (other.gameObject.tag == "Alien1")
             {
-                CounterPoints.PuntoVerde();
+                CounterPoints.instance.SumaPuntos(10);
                 Debug.Log("Si");
             }
             if (other.gameObject.tag == "Alien2")
             {
-                CounterPoints.PuntoRojo();
+                CounterPoints.instance.SumaPuntos(20);
             }
             if (other.gameObject.tag == "Alien3")
             {
-                CounterPoints.PuntoAzul();
+                CounterPoints.instance.SumaPuntos(30);
             }
             other.gameObject.SetActive(false);
         }

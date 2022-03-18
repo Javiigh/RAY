@@ -9,6 +9,8 @@ public class FinalScreen : MonoBehaviour
     public Button Replay;
     public TextMeshProUGUI Score;
 
+    public ShipController shipController;
+
     void Start()
     {
         

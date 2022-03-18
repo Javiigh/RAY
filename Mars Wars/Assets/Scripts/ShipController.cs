@@ -10,6 +10,8 @@ public class ShipController : MonoBehaviour
 
     public int Ship;
 
+    public float life;
+    public static ShipController instance;
     float speedMov;
     float ColissionSpeed;
 
@@ -19,10 +21,31 @@ public class ShipController : MonoBehaviour
     public float speed = 3.0f;
 
     float cadence = 1.0f;
+    public GameObject FinalScreen;
 
     void Start()
     {
         rigidbody2D = GetComponent<Rigidbody2D>();
+        for (int i = 0; i < infoNaves.Length; i++)
+        {
+            if ((i) == Ship)
+            {
+                life = infoNaves[i].shield;
+            }
+        }
+    }
+
+    void Awake()
+    {
+        if (ShipController.instance == null)
+        {
+            ShipController.instance = this;
+        }
+        else
+        {
+            Destroy(this);
+        }
+
     }
 
     public void VelNave()
@@ -33,6 +56,7 @@ public class ShipController : MonoBehaviour
             if ((i) == Ship)
             {
                 speedMov = infoNaves[i].speed;
+                
             }
             else
             {
@@ -87,6 +111,7 @@ public class ShipController : MonoBehaviour
         //Debug.Log("mov " + speedMov);
         //Debug.Log("ship " + Ship);
         //Debug.Log("cadencia " + cadence);
+        Debug.Log("Vida " + life);
 
         cadence = cadence - Time.deltaTime;
 
@@ -104,5 +129,18 @@ public class ShipController : MonoBehaviour
     void Launch()
     {
         GameObject RayoObject = Instantiate(DisparoPrefab, rigidbody2D.position + Vector2.up * 0.5f, Quaternion.identity);
+    }
+
+    public void Heat(int amount)
+    {
+        life += amount;
+    }
+
+    void dead()
+    {
+        if (life <= 0)
+        {
+            FinalScreen.SetActive(true);
+        }
     }
 }

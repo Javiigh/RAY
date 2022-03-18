@@ -7,6 +7,8 @@ public class laserAzul : MonoBehaviour
     public float speed = 0.02f;
     Rigidbody2D rigidbody2D;
 
+    public ShipController ShipController;
+
     void Awake()
     {
         rigidbody2D = GetComponent<Rigidbody2D>();
@@ -37,9 +39,9 @@ public class laserAzul : MonoBehaviour
             
         }
 
-        else
+        else if (other.gameObject.tag == "Nave")
         {
-            //other.gameObject.SetActive(false);
+            ShipController.instance.Heat(-1);
         }
         Destroy(gameObject);
     }

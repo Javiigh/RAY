@@ -10,6 +10,7 @@ TagManager:
   - LateralI
   - Alien2
   - Alien3
+  - Nave
   layers:
   - Default
   - TransparentFX

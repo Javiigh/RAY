@@ -146,3 +146,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0.02
   CounterPoints: {fileID: 1812848173789212529, guid: 069c2711c5876c74f8ba6362dcde022d, type: 3}
+  DisparoPrefab: {fileID: 4883674997161253951}

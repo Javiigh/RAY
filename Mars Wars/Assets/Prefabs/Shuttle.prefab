@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2315869957314650582}
   m_Layer: 6
   m_Name: Shuttle
-  m_TagString: Untagged
+  m_TagString: Nave
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -105,6 +105,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 6924bad87510d6644a98ac1928e69378, type: 2}
   - {fileID: 11400000, guid: d327a1c0b22fd8c45a0a269de30aa95a, type: 2}
   Ship: 1
+  life: 0
   DisparoPrefab: {fileID: 4883674997161253951, guid: 883404c83a58a8947abc70e1c252ec4f, type: 3}
   speed: 3
 --- !u!61 &455890699743221791
