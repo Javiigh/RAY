@@ -8,6 +8,7 @@ public class laserAzul : MonoBehaviour
     Rigidbody2D rigidbody2D;
 
     public ShipController ShipController;
+    public float ShipLife;
 
     void Awake()
     {
@@ -24,7 +25,6 @@ public class laserAzul : MonoBehaviour
         {
             Launch();
         }
-
     }
 
     public void Launch()
@@ -41,7 +41,8 @@ public class laserAzul : MonoBehaviour
 
         else if (other.gameObject.tag == "Nave")
         {
-            ShipController.instance.Heat(-1);
+            //ShipController.Heat(-1);
+            ShipLife = -1;
         }
         Destroy(gameObject);
     }

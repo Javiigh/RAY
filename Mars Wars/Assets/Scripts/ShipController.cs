@@ -11,6 +11,8 @@ public class ShipController : MonoBehaviour
     public int Ship;
 
     public float life;
+    public laserAzul laserAzul;
+    public GameObject FinalScreenPrefab;
     public static ShipController instance;
     float speedMov;
     float ColissionSpeed;
@@ -21,7 +23,6 @@ public class ShipController : MonoBehaviour
     public float speed = 3.0f;
 
     float cadence = 1.0f;
-    public GameObject FinalScreen;
 
     void Start()
     {
@@ -30,7 +31,12 @@ public class ShipController : MonoBehaviour
         {
             if ((i) == Ship)
             {
-                life = infoNaves[i].shield;
+               life = infoNaves[i].shield;
+
+            }
+            else
+            {
+
             }
         }
     }
@@ -45,14 +51,12 @@ public class ShipController : MonoBehaviour
         {
             Destroy(this);
         }
-
     }
 
     public void VelNave()
     {
         for (int i = 0; i < infoNaves.Length; i++)
         {
-
             if ((i) == Ship)
             {
                 speedMov = infoNaves[i].speed;
@@ -63,12 +67,12 @@ public class ShipController : MonoBehaviour
                 
             }
         }
-
     }
 
     void Update()
     {
         VelNave();
+        Heat();
 
         if (Ship == 0)
         {
@@ -111,7 +115,6 @@ public class ShipController : MonoBehaviour
         //Debug.Log("mov " + speedMov);
         //Debug.Log("ship " + Ship);
         //Debug.Log("cadencia " + cadence);
-        Debug.Log("Vida " + life);
 
         cadence = cadence - Time.deltaTime;
 
@@ -123,7 +126,6 @@ public class ShipController : MonoBehaviour
                 Launch();
             }
         }
-
     }
 
     void Launch()
@@ -131,16 +133,26 @@ public class ShipController : MonoBehaviour
         GameObject RayoObject = Instantiate(DisparoPrefab, rigidbody2D.position + Vector2.up * 0.5f, Quaternion.identity);
     }
 
-    public void Heat(int amount)
-    {
-        life += amount;
-    }
-
     void dead()
     {
-        if (life <= 0)
+        if (life == 0)
         {
-            FinalScreen.SetActive(true);
+            GameObject Screen = Instantiate(FinalScreenPrefab, new Vector2(0, 0), Quaternion.identity);
+            Debug.Log("cambiando");
+        }
+    }
+
+    public void Heat()
+    {
+        life = life + (laserAzul.ShipLife);
+        Debug.Log("Lifell" + life);
+        dead();
+        for (int i = 0; i < infoNaves.Length; i++)
+        {
+            if ((i) == Ship)
+            {
+                life = infoNaves[i].shield;
+            }
         }
     }
 }

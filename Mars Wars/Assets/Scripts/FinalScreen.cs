@@ -8,12 +8,11 @@ public class FinalScreen : MonoBehaviour
 {
     public Button Replay;
     public TextMeshProUGUI Score;
-
-    public ShipController shipController;
+    public CounterPoints counterPoints;
 
     void Start()
     {
-        
+        Score.text = "Puntos = " + counterPoints.Points;
     }
 
     void Update()

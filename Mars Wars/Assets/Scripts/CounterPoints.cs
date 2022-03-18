@@ -6,11 +6,10 @@ using TMPro;
 
 public class CounterPoints : MonoBehaviour
 {
-    int Points = 0;
+    public int Points = 0;
 
     public GameObject FinalScreen;
-    public Button SigScreen;
-
+    public ShipController shipController;
     public static CounterPoints instance;
     public TextMeshProUGUI PointsText;
 
@@ -30,7 +29,7 @@ public class CounterPoints : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(Points);
+        //Debug.Log(Points);
     }
 
     public void SumaPuntos(int amount)
@@ -38,6 +37,4 @@ public class CounterPoints : MonoBehaviour
         Points += amount;
         PointsText.text = "Puntos = " + Points;
     }
-   
-   
 }

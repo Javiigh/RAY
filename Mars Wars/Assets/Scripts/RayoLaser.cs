@@ -51,6 +51,4 @@ public class RayoLaser : MonoBehaviour
         }
         Destroy(gameObject);
     }
-
-    
 }
