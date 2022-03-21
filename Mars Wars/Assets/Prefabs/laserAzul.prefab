@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 652016391996318960}
   m_Layer: 3
   m_Name: laserAzul
-  m_TagString: Untagged
+  m_TagString: LaserAzul
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -145,3 +145,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.02
+  ShipController: {fileID: 0}
+  ShipLife: 0

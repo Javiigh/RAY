@@ -115,6 +115,7 @@ public class ShipController : MonoBehaviour
         //Debug.Log("mov " + speedMov);
         //Debug.Log("ship " + Ship);
         //Debug.Log("cadencia " + cadence);
+        //Debug.Log("vidass" + life);
 
         cadence = cadence - Time.deltaTime;
 
@@ -138,14 +139,13 @@ public class ShipController : MonoBehaviour
         if (life == 0)
         {
             GameObject Screen = Instantiate(FinalScreenPrefab, new Vector2(0, 0), Quaternion.identity);
-            Debug.Log("cambiando");
+            //Debug.Log("cambiando");
         }
     }
 
     public void Heat()
     {
-        life = life + (laserAzul.ShipLife);
-        Debug.Log("Lifell" + life);
+        //Debug.Log("Lifell" + life);
         dead();
         for (int i = 0; i < infoNaves.Length; i++)
         {
@@ -153,6 +153,14 @@ public class ShipController : MonoBehaviour
             {
                 life = infoNaves[i].shield;
             }
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.tag == "LaserAzul")
+        {
+            life = life -1;
         }
     }
 }

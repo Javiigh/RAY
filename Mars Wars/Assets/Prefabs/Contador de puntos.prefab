@@ -43,4 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98193112e6e0ca54abe549a7e407ba53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Points: 0
+  FinalScreen: {fileID: 3255891327006202755, guid: 76f7d48371d633f47b21c7fd3a44607a, type: 3}
+  shipController: {fileID: 0}
   PointsText: {fileID: 0}

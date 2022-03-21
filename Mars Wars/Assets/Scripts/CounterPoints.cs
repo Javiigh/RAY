@@ -35,6 +35,6 @@ public class CounterPoints : MonoBehaviour
     public void SumaPuntos(int amount)
     {
         Points += amount;
-        PointsText.text = "Puntos = " + Points;
+        PointsText.text = "Puntos = " + Points.ToString();
     }
 }

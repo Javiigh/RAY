@@ -7,7 +7,6 @@ using Random = UnityEngine.Random;
 public class EnemiesController : MonoBehaviour
 {
     [Serializable]
-
     public class EnemiesList
     {
         public GameObject[] enemies;

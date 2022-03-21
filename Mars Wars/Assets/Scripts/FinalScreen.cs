@@ -8,16 +8,17 @@ public class FinalScreen : MonoBehaviour
 {
     public Button Replay;
     public TextMeshProUGUI Score;
-    public CounterPoints counterPoints;
+    
 
-    void Start()
+    void Awake()
     {
-        Score.text = "Puntos = " + counterPoints.Points;
+        Score.text = "" + CounterPoints.instance.Points.ToString();
     }
 
     void Update()
     {
-        
+        Score.text = CounterPoints.instance.Points.ToString();
+        Debug.Log(CounterPoints.instance.Points);
     }
 
     public void ClickReplay()

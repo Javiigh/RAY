@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 2913415119838995033}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.33616537, y: 3.7, z: 0}
-  m_LocalScale: {x: 0.9, y: 0.9, z: 0.9}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children:
   - {fileID: 3450952348899352048}
   - {fileID: 7998055010617423172}
@@ -87,7 +87,7 @@ MonoBehaviour:
     - {fileID: 3581499650334484161}
   LaserPrefab: {fileID: 3931748792814790799, guid: da055c4a5e38a554a977524988d6e521, type: 3}
   alienMove: {fileID: 4806807981840777326, guid: a8bc4ef7712f635438d18e69e9ccb542, type: 3}
-  points: 0
+  Shoter: 0
 --- !u!50 &2913415119838995029
 Rigidbody2D:
   serializedVersion: 4
