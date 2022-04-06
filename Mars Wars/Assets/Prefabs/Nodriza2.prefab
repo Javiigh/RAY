@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 1180335999784951594}
   - component: {fileID: 2248522025426493160}
   - component: {fileID: 7536066875043755905}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Nodriza2
-  m_TagString: Untagged
+  m_TagString: Nodrizass
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7499373566426654403}
   m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
-  m_LocalPosition: {x: -0, y: 6, z: 0}
+  m_LocalPosition: {x: -12, y: 6, z: 0}
   m_LocalScale: {x: 15, y: 15, z: 15}
   m_Children: []
   m_Father: {fileID: 0}
@@ -119,7 +119,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 6
 --- !u!61 &7536066875043755905
 BoxCollider2D:
   m_ObjectHideFlags: 0

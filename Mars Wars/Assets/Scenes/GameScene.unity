@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -508,6 +508,63 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 49af9779837380b49a84be9dada3537d, type: 3}
+--- !u!1001 &497795868
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7158735674682702969, guid: 871c27938db55e44dbc27776a323a41c, type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7158735674682702969, guid: 871c27938db55e44dbc27776a323a41c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7158735674682702969, guid: 871c27938db55e44dbc27776a323a41c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7158735674682702969, guid: 871c27938db55e44dbc27776a323a41c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7158735674682702969, guid: 871c27938db55e44dbc27776a323a41c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7158735674682702969, guid: 871c27938db55e44dbc27776a323a41c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7158735674682702969, guid: 871c27938db55e44dbc27776a323a41c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7158735674682702969, guid: 871c27938db55e44dbc27776a323a41c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7158735674682702969, guid: 871c27938db55e44dbc27776a323a41c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 7158735674682702969, guid: 871c27938db55e44dbc27776a323a41c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7158735674682702969, guid: 871c27938db55e44dbc27776a323a41c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 7499373566426654403, guid: 871c27938db55e44dbc27776a323a41c, type: 3}
+      propertyPath: m_Name
+      value: Nodriza2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 871c27938db55e44dbc27776a323a41c, type: 3}
 --- !u!1001 &706426126
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -926,7 +983,7 @@ GameObject:
   - component: {fileID: 1864858345}
   - component: {fileID: 1864858344}
   - component: {fileID: 1864858343}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: LatI
   m_TagString: LateralI
   m_Icon: {fileID: 0}
@@ -975,7 +1032,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 1.2569046}
+  m_Offset: {x: 0, y: -0.19584394}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -986,7 +1043,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 13.122147}
+  m_Size: {x: 1, y: 10.21665}
   m_EdgeRadius: 0
 --- !u!224 &1864858346
 RectTransform:
@@ -1141,63 +1198,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1920813406}
   m_CullTransparentMesh: 1
---- !u!1001 &2078315574
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 7158735674682702969, guid: 871c27938db55e44dbc27776a323a41c, type: 3}
-      propertyPath: m_RootOrder
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 7158735674682702969, guid: 871c27938db55e44dbc27776a323a41c, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7158735674682702969, guid: 871c27938db55e44dbc27776a323a41c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 7158735674682702969, guid: 871c27938db55e44dbc27776a323a41c, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7158735674682702969, guid: 871c27938db55e44dbc27776a323a41c, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7158735674682702969, guid: 871c27938db55e44dbc27776a323a41c, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7158735674682702969, guid: 871c27938db55e44dbc27776a323a41c, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7158735674682702969, guid: 871c27938db55e44dbc27776a323a41c, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7158735674682702969, guid: 871c27938db55e44dbc27776a323a41c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 180
-      objectReference: {fileID: 0}
-    - target: {fileID: 7158735674682702969, guid: 871c27938db55e44dbc27776a323a41c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7158735674682702969, guid: 871c27938db55e44dbc27776a323a41c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 180
-      objectReference: {fileID: 0}
-    - target: {fileID: 7499373566426654403, guid: 871c27938db55e44dbc27776a323a41c, type: 3}
-      propertyPath: m_Name
-      value: Nodriza2
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 871c27938db55e44dbc27776a323a41c, type: 3}
 --- !u!1 &2084440133
 GameObject:
   m_ObjectHideFlags: 0
@@ -1210,7 +1210,7 @@ GameObject:
   - component: {fileID: 2084440136}
   - component: {fileID: 2084440135}
   - component: {fileID: 2084440134}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: LatD
   m_TagString: LateralD
   m_Icon: {fileID: 0}
@@ -1259,7 +1259,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 1.2569046}
+  m_Offset: {x: 0, y: -0.1958437}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1270,7 +1270,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 13.122147}
+  m_Size: {x: 1, y: 10.21665}
   m_EdgeRadius: 0
 --- !u!224 &2084440137
 RectTransform:

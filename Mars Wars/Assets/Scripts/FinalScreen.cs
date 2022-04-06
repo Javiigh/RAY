@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class FinalScreen : MonoBehaviour
 {
@@ -23,6 +24,6 @@ public class FinalScreen : MonoBehaviour
 
     public void ClickReplay()
     {
-        
+        Scene scene = SceneManager.GetActiveScene(); SceneManager.LoadScene(scene.name);
     }
 }

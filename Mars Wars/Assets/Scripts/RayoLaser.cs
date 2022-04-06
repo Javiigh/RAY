@@ -47,6 +47,10 @@ public class RayoLaser : MonoBehaviour
             {
                 CounterPoints.instance.SumaPuntos(30);
             }
+            if (other.gameObject.tag == "Nodrizass")
+            {
+                CounterPoints.instance.SumaPuntos(50);
+            }
             other.gameObject.SetActive(false);
         }
         Destroy(gameObject);

@@ -44,6 +44,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Points: 0
-  FinalScreen: {fileID: 3255891327006202755, guid: 76f7d48371d633f47b21c7fd3a44607a, type: 3}
   shipController: {fileID: 0}
   PointsText: {fileID: 0}
+  FinalScreenPrefab: {fileID: 3255891327006202755, guid: 76f7d48371d633f47b21c7fd3a44607a, type: 3}

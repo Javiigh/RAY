@@ -134,19 +134,19 @@ public class ShipController : MonoBehaviour
         GameObject RayoObject = Instantiate(DisparoPrefab, rigidbody2D.position + Vector2.up * 0.5f, Quaternion.identity);
     }
 
-    void dead()
+    public void dead()
     {
-        if (life == 0)
-        {
-            GameObject Screen = Instantiate(FinalScreenPrefab, new Vector2(0, 0), Quaternion.identity);
-            //Debug.Log("cambiando");
-        }
+      GameObject Screen = Instantiate(FinalScreenPrefab, new Vector2(0, 0), Quaternion.identity);
     }
 
     public void Heat()
     {
         //Debug.Log("Lifell" + life);
-        dead();
+        if (life == 0)
+        {
+            dead();
+        }
+            
         for (int i = 0; i < infoNaves.Length; i++)
         {
             if ((i) == Ship)

@@ -8,10 +8,10 @@ public class CounterPoints : MonoBehaviour
 {
     public int Points = 0;
 
-    public GameObject FinalScreen;
     public ShipController shipController;
     public static CounterPoints instance;
     public TextMeshProUGUI PointsText;
+    public GameObject FinalScreenPrefab;
 
     void Awake()
     {
@@ -30,11 +30,21 @@ public class CounterPoints : MonoBehaviour
     void Update()
     {
         //Debug.Log(Points);
+
+        if (Points >= 410)
+        {
+            Win();
+        }
     }
 
     public void SumaPuntos(int amount)
     {
         Points += amount;
         PointsText.text = "Puntos = " + Points.ToString();
+    }
+
+    public void Win()
+    {
+        GameObject Screen = Instantiate(FinalScreenPrefab, new Vector2(0, 0), Quaternion.identity);
     }
 }
