@@ -9,7 +9,6 @@ public class LevelLoader : MonoBehaviour
     public float Timer = 0f;
     bool touchEnded = false;
 
-    // Update is called once per frame
     void Update()
     {
         if(Input.touchCount >0)
@@ -38,7 +37,6 @@ public class LevelLoader : MonoBehaviour
         {
             LoadNextLevel();
         }
-
     }
 
     public void LoadNextLevel()

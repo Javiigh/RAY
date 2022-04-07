@@ -12,9 +12,4 @@ public class AudioSourceVolumeSet : MonoBehaviour
         audioSource = gameObject.GetComponent<AudioSource>();
         audioSource.volume = PlayerPrefs.GetFloat(keyValue, 1.0f);
     }
-
-    void Update()
-    {
-        
-    }
 }

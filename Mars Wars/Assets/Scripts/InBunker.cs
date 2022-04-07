@@ -11,15 +11,8 @@ public class InBunker : MonoBehaviour
 
     int cuenta;
 
-    void Start()
-    {
-        
-    }
-
     void Update()
     {
-        //Debug.Log(cuenta);
-
         if(cuenta == 2)
         {
             bunker1.gameObject.SetActive(false);
@@ -46,7 +39,5 @@ public class InBunker : MonoBehaviour
     void OnCollisionEnter2D(Collision2D other)
     {
         cuenta++;
-        //bunker1.gameObject.SetActive(false);
-        //Destroy(gameObject);
     }
 }

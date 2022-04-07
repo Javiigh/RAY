@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RayoLaser : MonoBehaviour
 {
-    public float speed = 0.02f;
+    public float speed = 0.05f;
     
     void Update()
     {
@@ -16,8 +16,6 @@ public class RayoLaser : MonoBehaviour
         {
             Launch();
         }
-
-        //inBunkers.SetActive(true);
     }
 
     public void Launch()

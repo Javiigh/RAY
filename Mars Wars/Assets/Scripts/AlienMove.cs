@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class AlienMove : MonoBehaviour
 {
-    float speedMov = 2 ;
     float EjeXSpeed;
     float timeX;
     float timeY;
@@ -24,11 +23,6 @@ public class AlienMove : MonoBehaviour
         rigidbody2D = GetComponent<Rigidbody2D>();
     }
 
-    void Start()
-    {
-
-    }
-
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Q))
@@ -39,13 +33,11 @@ public class AlienMove : MonoBehaviour
 
     public void LaunchAlien()
     {
-        //Debug.Log("Lanzando");
         GameObject LaserObject = Instantiate(laserAzulPrefab, rigidbody2D.position + Vector2.up * 0.5f, Quaternion.identity);
     }
 
     void OnCollisionEnter2D(Collision2D other)
     {
-        //Debug.Log("col");
         if (other.gameObject.tag == "LateralD")
         {
             BigMove.ColisionD();

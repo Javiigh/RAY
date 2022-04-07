@@ -30,7 +30,6 @@ public class EnemiesController : MonoBehaviour
     void Start()
     {
         PrintArray();
-        //rigidbody2D = GetComponent<Rigidbody2D>();
     }
 
     void PrintArray()
@@ -49,11 +48,9 @@ public class EnemiesController : MonoBehaviour
 
     void Update()
     {
-        //Debug.Log(Shoter);
-
         timer = timer + Time.deltaTime;
 
-        if (timer > 2.5)
+        if (timer > 1.5)
         {
             ChooseShoter();
             timer = 0;
@@ -104,10 +101,6 @@ public class EnemiesController : MonoBehaviour
                 }
             }
         }
-        //enemiesList[lastX].enemies[lastY].SetActive(false);
-        //enemiesList[lastX].enemies[lastY].transform.Translate(0, 0, 20);
-        //enemiesList[lastX].enemies[lastY].transform.localPosition = Aim;
-        //Debug.Log(enemiesList[lastX].enemies[lastY].transform.localPosition);
         Aim = enemiesList[lastX].enemies[Shoter].transform.localPosition;
         Aim = Aim - new Vector2(0, -2);
     }

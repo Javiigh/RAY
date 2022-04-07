@@ -53,7 +53,6 @@ public class SpaceshipScreen : MonoBehaviour
                 ObjectNaves[i].SetActive(false);
             }
         }
-
         GameDataPersistent.instance.selectedSpaceship = infoNaves[Ship];
     }
 
@@ -68,7 +67,6 @@ public class SpaceshipScreen : MonoBehaviour
         {
             imageGeneric.fillAmount -= Time.deltaTime * speed;
         }
-
     }
 
     void Update()
@@ -82,10 +80,8 @@ public class SpaceshipScreen : MonoBehaviour
 
         GameDataPersistent.instance.selectedSpaceship = infoNaves[Ship];
 
-
         Pantalla.SetActive(false);
         PressSpace.SetActive(true);
-
 
         ButtonSound.Play(0);
     }
@@ -96,10 +92,8 @@ public class SpaceshipScreen : MonoBehaviour
 
         GameDataPersistent.instance.selectedSpaceship = infoNaves[Ship];
 
-
         Pantalla.SetActive(false);
         PressSpace.SetActive(true);
-
 
         ButtonSound.Play(0);
     }
@@ -110,10 +104,8 @@ public class SpaceshipScreen : MonoBehaviour
 
         GameDataPersistent.instance.selectedSpaceship = infoNaves[Ship];
 
-
         Pantalla.SetActive(false);
         PressSpace.SetActive(true);
-
 
         ButtonSound.Play(0);
     }

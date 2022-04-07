@@ -41,7 +41,6 @@ public class laserAzul : MonoBehaviour
 
         else if (other.gameObject.tag == "Nave")
         {
-            //ShipController.Heat(-1);
             ShipLife = -1;
         }
         Destroy(gameObject);

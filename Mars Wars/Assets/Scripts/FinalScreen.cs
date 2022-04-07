@@ -8,8 +8,8 @@ using UnityEngine.SceneManagement;
 public class FinalScreen : MonoBehaviour
 {
     public Button Replay;
+    public Button MainScreen;
     public TextMeshProUGUI Score;
-    
 
     void Awake()
     {
@@ -25,5 +25,21 @@ public class FinalScreen : MonoBehaviour
     public void ClickReplay()
     {
         Scene scene = SceneManager.GetActiveScene(); SceneManager.LoadScene(scene.name);
+    }
+
+    public void ClickMainScreen()
+    {
+        LoadPrevLevel();
+    }
+
+    public void LoadPrevLevel()
+    {
+        StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex - 1));
+    }
+
+    IEnumerator LoadLevel(int LevelIndex)
+    {
+        yield return new WaitForSeconds(1);
+        SceneManager.LoadScene(LevelIndex);
     }
 }

@@ -12,11 +12,6 @@ public class SecondLevelLoader : MonoBehaviour
 
     public Button MainScreen;
 
-    void Update()
-    {
-
-    }
-
     public void ClickMainScreen()
     {
         LoadMainScreen();

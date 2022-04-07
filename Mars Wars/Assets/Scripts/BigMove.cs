@@ -24,9 +24,6 @@ public class BigMove : MonoBehaviour
 
     void Update()
     {
-        //Debug.Log(choque);
-        //Debug.Log(timer);
-        //Debug.Log(timerY);
         timer = timer + Time.deltaTime;
         timerY = timerY + Time.deltaTime;
 

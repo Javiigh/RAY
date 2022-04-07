@@ -8,16 +8,6 @@ public class ChangeScreen : MonoBehaviour
     public GameObject nextScreen;
     public AudioSource efectsSource;
 
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-        
-    }
-
     public void NextScreen()
     {
         currentScreen.SetActive(false);

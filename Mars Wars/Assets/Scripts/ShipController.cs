@@ -111,11 +111,6 @@ public class ShipController : MonoBehaviour
 
             transform.Translate(-ColissionSpeed, 0, 0);
         }
-        //Debug.Log("velocidad " + ColissionSpeed);
-        //Debug.Log("mov " + speedMov);
-        //Debug.Log("ship " + Ship);
-        //Debug.Log("cadencia " + cadence);
-        //Debug.Log("vidass" + life);
 
         cadence = cadence - Time.deltaTime;
 
@@ -141,7 +136,6 @@ public class ShipController : MonoBehaviour
 
     public void Heat()
     {
-        //Debug.Log("Lifell" + life);
         if (life == 0)
         {
             dead();
@@ -161,6 +155,11 @@ public class ShipController : MonoBehaviour
         if (other.gameObject.tag == "LaserAzul")
         {
             life = life -1;
+        }
+
+        if (other.gameObject.tag == "Alien1" && other.gameObject.tag == "Alien2" && other.gameObject.tag == "Alien3") 
+        {
+            life = 0;
         }
     }
 }

@@ -13,15 +13,7 @@ public class AudioController : MonoBehaviour
     void Start()
     {
         musicSource.volume = SliderSound.value;
-        //O SliderSoundMofied()
         musicSource.pitch = SliderEffects.value;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        //    Debug.Log("Valor modificado" + SliderSound.value);
-        //     Debug.Log("Valor modificado" + SliderEffects.value);
     }
 
     public void SliderSoundMofied()

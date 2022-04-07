@@ -16,7 +16,6 @@ public class Config : MonoBehaviour
 
     public void SalirSinGuardar()
     {
-        //O no hacer nada
         sfxSlider.value = PlayerPrefs.GetFloat("sfxVolume", 1.0f);
         musicSlider.value = PlayerPrefs.GetFloat("musicVolume", 1.0f);
     }
@@ -27,5 +26,4 @@ public class Config : MonoBehaviour
         PlayerPrefs.SetFloat("musicVolume" , musicSlider.value);
         PlayerPrefs.Save();
     }
-
 }

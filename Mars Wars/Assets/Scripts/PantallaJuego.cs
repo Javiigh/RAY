@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class PantallaJuego : MonoBehaviour
 {
-
     public GameObject Marte1p;
     public GameObject Starship1p;
     public GameObject Marte2p;
@@ -22,16 +21,6 @@ public class PantallaJuego : MonoBehaviour
     public GameObject P2Jugadores;
     public GameObject P2Jugadores2;
     public GameObject Modojuego;
-
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-       
-    }
 
     public void ClickP1B()
     {

@@ -24,13 +24,10 @@ public class CounterPoints : MonoBehaviour
         {
             Destroy(this);
         }
-       
     }
 
     void Update()
     {
-        //Debug.Log(Points);
-
         if (Points >= 410)
         {
             Win();

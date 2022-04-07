@@ -1046,6 +1046,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Replay: {fileID: 3255891327373008288}
+  MainScreen: {fileID: 3255891327719051602}
   Score: {fileID: 3255891326772401353}
 --- !u!1 &3255891327719051612
 GameObject:
@@ -1169,8 +1170,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: SecondLevelLoader, Assembly-CSharp
+      - m_Target: {fileID: 3255891327564691158}
+        m_TargetAssemblyTypeName: FinalScreen, Assembly-CSharp
         m_MethodName: ClickMainScreen
         m_Mode: 1
         m_Arguments:

@@ -11,13 +11,4 @@ public class SelectButton : MonoBehaviour
     {
         SelectedButton.Select();
     }
-
 }
-
-
-//PUBLIC AudioSource effect;
-
-
-
-
-//[Dentro de la función] effect.Play();

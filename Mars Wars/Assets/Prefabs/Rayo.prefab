@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6860395717587798899}
   - component: {fileID: 3349436316836062399}
   - component: {fileID: 6642835848360875508}
-  - component: {fileID: 6202399667504986885}
+  - component: {fileID: 3487676282121527526}
   m_Layer: 7
   m_Name: Rayo
   m_TagString: Untagged
@@ -28,8 +28,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4883674997161253951}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.61, z: -1}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalPosition: {x: 0, y: -2.001, z: -1}
+  m_LocalScale: {x: 0.38, y: 0.29365, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -132,7 +132,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.1434178, y: 3.6968324}
   m_EdgeRadius: 0
---- !u!114 &6202399667504986885
+--- !u!114 &3487676282121527526
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -144,6 +144,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac9e2c6165e6fa540a849c7212ea06f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.02
-  CounterPoints: {fileID: 1812848173789212529, guid: 069c2711c5876c74f8ba6362dcde022d, type: 3}
-  DisparoPrefab: {fileID: 4883674997161253951}
+  speed: 0.05

@@ -32,6 +32,5 @@ public class Nodrizaship : MonoBehaviour
     void firstMovimiento()
     {
         transform.Translate(-Speed, 0, 0);
-        //NodrizaTimer = 0;
     }
 }

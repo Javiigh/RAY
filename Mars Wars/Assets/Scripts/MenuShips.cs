@@ -22,11 +22,6 @@ public class MenuShips : MonoBehaviour
         Jugar.enabled= false;
     }
 
-    void Update()
-    {
-   
-    }
-
     public void ClickUnJugador()
     {
         SiJuega.SetActive(true);
