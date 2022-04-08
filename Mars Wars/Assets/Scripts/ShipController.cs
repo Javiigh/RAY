@@ -18,6 +18,7 @@ public class ShipController : MonoBehaviour
     float ColissionSpeed;
 
     public GameObject DisparoPrefab;
+    public GameObject Rayo2Prefab;
     Rigidbody2D rigidbody2D;
     Vector2 lookDirection = new Vector2(1, 0);
     public float speed = 3.0f;
@@ -121,12 +122,23 @@ public class ShipController : MonoBehaviour
                 cadence = 1.0f;
                 Launch();
             }
+
+            if (Input.GetKeyDown(KeyCode.X))
+            {
+                cadence = 1.0f;
+                Launch2();
+            }
         }
     }
 
     void Launch()
     {
         GameObject RayoObject = Instantiate(DisparoPrefab, rigidbody2D.position + Vector2.up * 0.5f, Quaternion.identity);
+    }
+
+    void Launch2()
+    {
+        GameObject Rayo2Object = Instantiate(Rayo2Prefab, rigidbody2D.position + Vector2.up * 0.5f, Quaternion.identity);
     }
 
     public void dead()

@@ -71,6 +71,8 @@ public class EnemiesController : MonoBehaviour
         {
             alienMove.LaunchAlien();
         }
+
+        Ultimafila();
     }
 
     void Shot()
@@ -109,5 +111,36 @@ public class EnemiesController : MonoBehaviour
     {
         Shoter = Random.Range(0, 6);
         Shot();
+    }
+
+    void Ultimafila()
+    {
+        int columna = enemiesList.Length - 1;
+        int lastFila = enemiesList[columna].enemies.Length - 1;
+        bool LastRow = false;
+
+        for (int x = 0; x < enemiesList.Length; x++)
+        {
+            for (int y = 0; y < enemiesList[x].enemies.Length;y++)
+            {
+                if (enemiesList[x].enemies[y].activeSelf == false && LastRow == false) //Al encontrar el desactivado paro la busqueda
+                {
+                    LastRow = true;
+                    Debug.Log("si "+ y);
+                }
+                else if (enemiesList[x].enemies[y].activeSelf == true && LastRow == false)
+                {
+                    columna = x;
+                    lastFila = y;
+                    Debug.Log("no ");
+                }
+            }
+        }
+
+    }
+
+    void OnCollisionEnter2D(Collision2D other)
+    {
+            other.gameObject.SetActive(false);
     }
 }
