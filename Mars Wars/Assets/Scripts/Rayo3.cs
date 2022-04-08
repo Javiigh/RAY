@@ -6,6 +6,7 @@ public class Rayo3 : MonoBehaviour
 {
     public float speed = 0.03f;
     public static Rayo3 instance;
+    public int variable = 1;
 
 
     void Awake()
@@ -37,6 +38,11 @@ public class Rayo3 : MonoBehaviour
         transform.Translate(0, speed, 0);
     }
 
+    public void Damage()
+    {
+        Destroy(this.gameObject);
+    }
+
     void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.tag == "InBunkers")
@@ -63,6 +69,7 @@ public class Rayo3 : MonoBehaviour
                 CounterPoints.instance.SumaPuntos(50);
             }
             other.gameObject.SetActive(false);
+            EnemiesController.instance.Ultimafila();
         }
     }
 }

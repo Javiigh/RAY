@@ -88,6 +88,8 @@ MonoBehaviour:
   LaserPrefab: {fileID: 3931748792814790799, guid: da055c4a5e38a554a977524988d6e521, type: 3}
   alienMove: {fileID: 4806807981840777326, guid: a8bc4ef7712f635438d18e69e9ccb542, type: 3}
   Shoter: 0
+  Fila: 1
+  Rayo3: {fileID: 1450866827524353848, guid: f66960787ec8ef24980662dff7a4c566, type: 3}
 --- !u!50 &2913415119838995029
 Rigidbody2D:
   serializedVersion: 4

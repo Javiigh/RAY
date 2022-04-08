@@ -110,6 +110,7 @@ MonoBehaviour:
   FinalScreenPrefab: {fileID: 3255891327006202755, guid: 76f7d48371d633f47b21c7fd3a44607a, type: 3}
   DisparoPrefab: {fileID: 4883674997161253951, guid: 883404c83a58a8947abc70e1c252ec4f, type: 3}
   Rayo2Prefab: {fileID: 2164889661358151476, guid: f3a85d90d385dc64a8946c52696b1a30, type: 3}
+  Rayo3Prefab: {fileID: 1450866827524353848, guid: f66960787ec8ef24980662dff7a4c566, type: 3}
   speed: 3
 --- !u!50 &8346242818897092767
 Rigidbody2D:

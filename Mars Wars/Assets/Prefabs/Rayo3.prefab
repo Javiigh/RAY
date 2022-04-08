@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 635511910163478644}
   - component: {fileID: 8763821996035413944}
   - component: {fileID: 852542881917544179}
-  - component: {fileID: 2756905725872569465}
+  - component: {fileID: 365539665458279322}
   m_Layer: 7
   m_Name: Rayo3
   m_TagString: Untagged
@@ -132,7 +132,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.1434178, y: 3.6968324}
   m_EdgeRadius: 0
---- !u!114 &2756905725872569465
+--- !u!114 &365539665458279322
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -141,7 +141,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 1450866827524353848}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe4e4252c2e6815408547742e8b7a315, type: 3}
+  m_Script: {fileID: 11500000, guid: d502f16365d99e945a64413af0b52fd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.03
+  variable: 1

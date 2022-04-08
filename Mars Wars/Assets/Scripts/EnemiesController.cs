@@ -22,9 +22,21 @@ public class EnemiesController : MonoBehaviour
     public int Shoter;
     float timer;
 
+    public int Fila = 1;
+    public static EnemiesController instance;
+
     void Awake()
     {
         rigidbody2D = GetComponent<Rigidbody2D>();
+
+        if (EnemiesController.instance == null)
+        {
+            EnemiesController.instance = this;
+        }
+        else
+        {
+            Destroy(this);
+        }
     }
 
     void Start()
@@ -71,8 +83,6 @@ public class EnemiesController : MonoBehaviour
         {
             alienMove.LaunchAlien();
         }
-
-        Ultimafila();
     }
 
     void Shot()
@@ -113,7 +123,7 @@ public class EnemiesController : MonoBehaviour
         Shot();
     }
 
-    void Ultimafila()
+    public void Ultimafila()
     {
         int columna = enemiesList.Length - 1;
         int lastFila = enemiesList[columna].enemies.Length - 1;
@@ -121,12 +131,12 @@ public class EnemiesController : MonoBehaviour
 
         for (int x = 0; x < enemiesList.Length; x++)
         {
-            for (int y = 0; y < enemiesList[x].enemies.Length;y++)
+            for (int y = 0; y < enemiesList[x].enemies.Length; y++)
             {
-                if (enemiesList[x].enemies[y].activeSelf == false && LastRow == false) //Al encontrar el desactivado paro la busqueda
+                if (enemiesList[x].enemies[y].activeSelf == false && LastRow == false)
                 {
                     LastRow = true;
-                    Debug.Log("si "+ y);
+                    Fila = x;
                 }
                 else if (enemiesList[x].enemies[y].activeSelf == true && LastRow == false)
                 {
@@ -134,9 +144,14 @@ public class EnemiesController : MonoBehaviour
                     lastFila = y;
                     Debug.Log("no ");
                 }
+
+                if ((enemiesList[0].enemies[y].activeSelf == false) == enemiesList[columna].enemies[lastFila])
+                {
+                    Rayo3.instance.Damage();
+                    Debug.Log("fila " + Fila);
+                }
             }
         }
-
     }
 
     void OnCollisionEnter2D(Collision2D other)
