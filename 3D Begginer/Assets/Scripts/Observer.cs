@@ -9,23 +9,24 @@ public class Observer : MonoBehaviour
 
     public GameEnding gameEnding;
 
-    private void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject == player)
+        if (other.transform == player)
         {
             m_IsPlayerInRange = true;
+            Debug.Log("H");
         }
     }
 
-    private void OnTriggerExit(Collider other)
+    void OnTriggerExit(Collider other)
     {
-        if (other.gameObject == player)
+        if (other.transform == player)
         {
             m_IsPlayerInRange = false;
         }
     }
 
-    private void Update()
+    void Update()
     {
         if (m_IsPlayerInRange)
         {
